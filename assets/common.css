@@ -1,0 +1,38 @@
+:root{
+    --header: 80px;
+    --subhead: calc(var(--header)/2);
+    --body: calc(var(--subhead)/2);
+    --left-margin: 15px;
+}
+
+nav{
+    margin-left: var(--left-margin);
+    margin-top: 20px;
+}
+
+button{
+    border: 1px black solid;
+    margin: 5px;
+    padding: 3px;
+}
+
+h1{
+    font-size: var(--header);
+    font-weight: bold;
+    margin-left: var(--left-margin);
+    margin-top: 25px;
+}
+
+h2{
+    font-size: var(--subhead);
+    font-weight: bold;
+    margin-left: var(--left-margin);
+    margin-top: 25px;
+}
+
+p{
+    font-size: var(--body);
+    margin-left: var(--left-margin);
+    margin-top: 4px;
+    max-width: 33ch;
+}
