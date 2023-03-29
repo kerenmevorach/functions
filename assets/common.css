@@ -16,6 +16,15 @@ button{
     padding: 3px;
 }
 
+button:hover{
+    opacity: 0.5;
+}
+
+.selected{
+    background-color: black;
+    color: white;
+}
+
 h1{
     font-size: var(--header);
     font-weight: bold;
@@ -35,4 +44,9 @@ p{
     margin-left: var(--left-margin);
     margin-top: 4px;
     max-width: 33ch;
+}
+
+
+input{
+    border: 1px black solid;
 }
