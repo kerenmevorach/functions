@@ -2,44 +2,70 @@
     --header: 80px;
     --subhead: calc(var(--header)/2);
     --body: calc(var(--subhead)/2);
+    --button: calc(var(--subhead)/2.5);
     --left-margin: 15px;
 }
 
+@font-face {
+	font-family: 'PP Editorial New';
+	src: url('PPEditorialNew-Regular.otf') format('truetype');
+    font-weight: 100;
+ }
+
+ @font-face {
+	font-family: 'Authentic Sans';
+	src: url('AUTHENTICSans-60.otf') format('truetype');
+    font-weight: 00;
+ }
+
+
+body{
+    font-family: 'PP Editorial New';
+}
+
 nav{
-    margin-left: var(--left-margin);
-    margin-top: 20px;
+    position: fixed;
+    top: 40px;
+    left: 10px
 }
 
-button{
-    border: 1px black solid;
+.button{
+    font-size: var(--button);
+    border: 1px red solid;
+    color: red;
     margin: 5px;
-    padding: 3px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 25px;
 }
 
-button:hover{
+.button:hover{
     opacity: 0.5;
 }
 
 .selected{
-    background-color: black;
+    background-color: red;
     color: white;
 }
 
 h1{
     font-size: var(--header);
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: var(--left-margin);
-    margin-top: 25px;
+    margin-top: 114px;
+    color: red;
 }
 
 h2{
     font-size: var(--subhead);
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: var(--left-margin);
     margin-top: 25px;
 }
 
 p{
+    font-family: 'Authentic Sans';
     font-size: var(--body);
     margin-left: var(--left-margin);
     margin-top: 4px;
@@ -48,5 +74,5 @@ p{
 
 
 input{
-    border: 1px black solid;
+    border: 1px red solid;
 }

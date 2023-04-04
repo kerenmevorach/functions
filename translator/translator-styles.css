@@ -1,15 +1,51 @@
 :root{
-    --header: 44px;
-    --subhead: calc(var(--header)/2);
+    --new-header: 50px;
+    --spacing: 135px;
+    /* --subhead: calc(var(--header)/2);
     --body: calc(var(--subhead)/2);
-    --left-margin: 15px;
+    --left-margin: 15px; */
 }
 
-h1{
-    line-height: 45px;
-}
 
 form{
     margin-left: 20px;
+    margin-top: var(--spacing);
+}
+
+.translator-label.active{
+    font-size: var(--new-header);
+    line-height: 57px;
+    margin-top: var(--spacing);
+    color: red;
+    display: block;
+}
+
+.translator-label{
+    display: none;
+}
+
+#term-translator{
+    font-family: 'Authentic Sans';
+    color: rgb(146, 146, 146);
+    width: 330px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 20px;
+    padding-right: 144px;
+    position: relative;
+}
+
+.translate-button{
+    height: 42px;
+    background-color: red;
+    color: white;
+    position: relative;
+    left: -93px;
+    top: -5px;
+}
+
+.text-field-input{
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
 }
