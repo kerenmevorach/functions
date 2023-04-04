@@ -4,6 +4,7 @@
     --body: calc(var(--subhead)/2);
     --button: calc(var(--subhead)/2.5);
     --left-margin: 15px;
+    --spacing: 135px;
 }
 
 @font-face {

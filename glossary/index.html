@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../assets/reset.css">
         <link rel="stylesheet" href="../assets/common.css">
         <link rel="stylesheet" href="glossary-styles.css">
+        <script src="assets/script.js" async defer></script>
     </head>
     <body>
 
@@ -21,7 +22,35 @@
 
         </nav>
 
-        <ul>
+        <div class="glossary-container">
+
+            <li  class="term-block">
+                <figure class="bullet-and-term">
+                    <div class="bullet"></div>
+                    <h2>Definition</h2>
+                </figure>
+                
+                <aside>
+                    <p class="definition"></p>
+                </aside>
+            </li>
+
+            <template id="term-block">
+                <li  class="term-block">
+                    <figure class="bullet-and-term">
+                        <div class="bullet"></div>
+                        <h2></h2>
+                    </figure>
+                    
+                    <aside>
+                        <p class="definition"></p>
+                    </aside>
+                </li>
+            </template>
+
+        </div>
+
+        <!-- <ul>
             <li>
                 <h2> > Chirp</h2>
             </li>
@@ -45,8 +74,6 @@
             <li>
                 <h2> > GTs</h2>
             </li>
-        </ul>
-        
-        <script src="" async defer></script>
+        </ul> -->
     </body>
 </html>
