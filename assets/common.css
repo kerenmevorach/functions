@@ -9,13 +9,13 @@
 
 @font-face {
 	font-family: 'PP Editorial New';
-	src: url('PPEditorialNew-Regular.otf') format('truetype');
+	src: url('fonts/PPEditorialNew-Regular.otf') format('truetype');
     font-weight: 100;
  }
 
  @font-face {
 	font-family: 'Authentic Sans';
-	src: url('AUTHENTICSans-60.otf') format('truetype');
+	src: url('fonts/AUTHENTICSans-60.otf') format('truetype');
     font-weight: 00;
  }
 

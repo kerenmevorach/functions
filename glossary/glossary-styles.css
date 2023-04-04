@@ -19,6 +19,6 @@
     margin-left: 15px;
 }
 
-.glossary-container{
+#glossary-container{
     margin-top: var(--spacing);
 }
