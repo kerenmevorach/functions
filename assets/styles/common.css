@@ -4,9 +4,11 @@
     --thirdhead: calc(var(--header)/3);
     --body: calc(var(--header)/4.6);
     --body-leading: calc(var(--header)/3.7);
-    --button: calc(var(--subhead)/2.5);
+    --button: 16px;
     --left-margin: 15px;
     --spacing: 135px;
+    --text-color: red;
+    --other-color: white;
 }
 
 @font-face {
@@ -29,7 +31,10 @@ body{
 nav{
     position: fixed;
     top: 40px;
-    left: 10px
+    left: calc(var(--left-margin) - 2px);
+    /* background-color: purple;
+    width: 350px;
+    height: 40px; */
 }
 button:hover{
     cursor: pointer;
@@ -37,8 +42,9 @@ button:hover{
 
 .button{
     font-size: var(--button);
-    border: 1px red solid;
-    color: red;
+    border: 1px var(--text-color) solid;
+    background-color: var(--other-color);
+    color: var(--text-color);
     margin: 5px;
     padding: 8px;
     padding-left: 12px;
@@ -51,8 +57,8 @@ button:hover{
 }
 
 .selected{
-    background-color: red;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--other-color);
 }
 
 h1{
@@ -60,15 +66,15 @@ h1{
     /* font-weight: bold; */
     margin-left: var(--left-margin);
     margin-top: 114px;
-    color: red;
+    color: var(--text-color);
 }
 
 h2{
     font-size: var(--subhead);
     /* font-weight: bold; */
     margin-left: var(--left-margin);
-    margin-top: 25px;
-    color: red;
+    margin-top: 30px;
+    color: var(--text-color);
 }
 
 h3{
@@ -88,5 +94,28 @@ p{
 
 
 input{
-    border: 1px red solid;
+    border: 1px var(--text-color) solid;
+}
+
+@media (min-width: 700px) {
+    :root{
+        --header: 100px;
+        --left-margin: 30px;
+    }
+
+    nav{
+        position: fixed;
+        top: 40px;
+        left: calc(var(--left-margin) - 8px);
+    }
+
+    p{
+        max-width: 42ch;
+    }
+}
+
+@media (min-width: 1100px) {
+    :root{
+        --header: 120px;
+    }
 }

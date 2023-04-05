@@ -8,7 +8,7 @@ h2{
 
 .bullet{
     /* background-color: red; */
-    border: 1.5px red solid;
+    border: 1.5px var(--text-color) solid;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -30,7 +30,7 @@ h2{
 .line{
     width: 100%;
     height: 1px;
-    background-color: red;
+    background-color: var(--text-color);
     margin-top: 12px;
 }
 
@@ -43,7 +43,7 @@ h2{
 }
 
 .word-set.active .bullet{
-    background-color: red;
+    background-color: var(--text-color);
 }
 
 h2{
