@@ -36,6 +36,7 @@ nav{
     width: 350px;
     height: 40px; */
 }
+
 button:hover{
     cursor: pointer;
 }
@@ -90,6 +91,10 @@ p{
     margin-top: 4px;
     max-width: 33ch;
     margin-right: 20px;
+}
+
+em{
+    font-style: italic;
 }
 
 

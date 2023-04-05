@@ -65,7 +65,7 @@ form{
 
     #term-translator{
         width: 610px;
-        border: 1.5px var(--text-color) solid;
+        border: 1px var(--text-color) solid;
     }
 
     .translate-button{
@@ -85,6 +85,8 @@ form{
         height: 70px;
         border-radius: 50px;
         padding-left: 30px;
+        border: 1.5px var(--text-color) solid;
+
  
     }
 
