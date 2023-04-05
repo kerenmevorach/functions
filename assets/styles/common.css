@@ -9,13 +9,13 @@
 
 @font-face {
 	font-family: 'PP Editorial New';
-	src: url('fonts/PPEditorialNew-Regular.otf') format('truetype');
+	src: url('../fonts/PPEditorialNew-Regular.otf') format('truetype');
     font-weight: 100;
  }
 
  @font-face {
 	font-family: 'Authentic Sans';
-	src: url('fonts/AUTHENTICSans-60.otf') format('truetype');
+	src: url('../fonts/AUTHENTICSans-60.otf') format('truetype');
     font-weight: 00;
  }
 
@@ -63,6 +63,7 @@ h2{
     /* font-weight: bold; */
     margin-left: var(--left-margin);
     margin-top: 25px;
+    color: red;
 }
 
 p{

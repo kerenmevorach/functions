@@ -11,28 +11,20 @@ const renderItems = (glossary) => {
 	glossary.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
 
-
-		// You can make each element inside of that…
-		const itemTitle = document.createElement('h2') // Make an `h2`
-		itemTitle.innerHTML = item.title // Put the JSON title inside
-		listItem.appendChild(itemTitle) // And add it to the `li`!
-
-
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-				<p>Released in <time>${item.title}</time></p>
-				<p><em>${item.americanized}</em></p>
-				<a href="${item.definition}">
-					<p>${item.example} / 10 →</p>
-				</a>
+			 	<div class="bullet-and-term">
+				 	<div class="bullet"></div>
+					<h1 class="term">${item.title}</h1>
+				</div>
+				<aside>
+					<p>${item.americanized}</p>
+					<p class="definition">${item.definition}</p>
+				</aside?
 			`
-		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
-		// You can build logic from your data, too
-		if (!item.alsoWriter) { // If this is `false`
-			listItem.classList.add('faded') // Add this class to the whole `li`
-		}
+		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
 		glossaryList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
