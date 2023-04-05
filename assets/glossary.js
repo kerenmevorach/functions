@@ -8,13 +8,15 @@ const renderItems = (glossary) => {
 	glossary.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
 
+		//add class
+
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-			 	<div class="bullet-and-term">
+			 	<button class="bullet-and-term">
 				 	<div class="bullet"></div>
 					<h2 class="term">${item.title}</h2>
-				</div>
+				</button>
 				<aside>
 					<h3>Americanized:</h3>
 					<p>${item.americanized}</p>
@@ -25,10 +27,37 @@ const renderItems = (glossary) => {
 			`
 
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
+		listItem.classList.add('word-set')
 
 		glossaryList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
+
+	const wordSet = document.querySelectorAll('.word-set');
+	const aside = document.querySelector('aside');
+	const bullet = document.querySelector('.bullet');
+	// const bulletTerm = document.querySelector('.bullet-and-term');
+
+
+	wordSet.forEach((bulletTerm) => {
+		bulletTerm.querySelector('.bullet-and-term').onclick = () =>{
+		// bulletTerm.onclick = () =>{
+			console.log('hi')
+			//why does it add the class to the parent (word-set)? 
+			bulletTerm.classList.toggle('active')
+		}
+})	
 }
+
+// imagesBlocks.forEach((block) => {
+// 	block.querySelector('figure').onclick = () =>{
+// 		block.classList.add('active')
+// 	}
+
+// 	block.querySelector('aside').onclick = () =>{
+// 		block.classList.remove('active')
+// 	}
+	
+// })
 
 
 
@@ -40,6 +69,8 @@ fetch('assets/glossary.json')
 		renderItems(glossary) // In order
 	})
 
+
+// const bulletTerm = document.querySelector('.bullet-and-term')
 
 
 

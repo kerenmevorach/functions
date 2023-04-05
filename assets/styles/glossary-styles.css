@@ -34,12 +34,16 @@ h2{
     margin-top: 12px;
 }
 
-aside{
+.word-set aside{
     display: none;
 }
 
-aside.active{
+.word-set.active aside{
     display: block;
+}
+
+.word-set.active .bullet{
+    background-color: red;
 }
 
 h2{
@@ -54,4 +58,5 @@ h3{
 p{
     margin-left: calc(var(--left-margin) + 30px);
     margin-bottom: 20px;
+    margin-right: 30px;
 }

@@ -2,7 +2,8 @@
     --header: 80px;
     --subhead: calc(var(--header)/2);
     --thirdhead: calc(var(--header)/3);
-    --body: calc(var(--header)/4);
+    --body: calc(var(--header)/4.6);
+    --body-leading: calc(var(--header)/3.7);
     --button: calc(var(--subhead)/2.5);
     --left-margin: 15px;
     --spacing: 135px;
@@ -29,6 +30,9 @@ nav{
     position: fixed;
     top: 40px;
     left: 10px
+}
+button:hover{
+    cursor: pointer;
 }
 
 .button{
@@ -75,9 +79,11 @@ h3{
 p{
     font-family: 'Authentic Sans';
     font-size: var(--body);
+    line-height: var(--body-leading);
     margin-left: var(--left-margin);
     margin-top: 4px;
     max-width: 33ch;
+    margin-right: 20px;
 }
 
 
