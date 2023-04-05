@@ -1,7 +1,4 @@
 // Function to render your items
-console.log('hi')
-
-// Function to render your items
 const renderItems = (glossary) => {
 	// The `ul` where the items will be inserted
 	const glossaryList = document.getElementById('glossary-container')
@@ -16,12 +13,15 @@ const renderItems = (glossary) => {
 			`
 			 	<div class="bullet-and-term">
 				 	<div class="bullet"></div>
-					<h1 class="term">${item.title}</h1>
+					<h2 class="term">${item.title}</h2>
 				</div>
 				<aside>
+					<h3>Americanized:</h3>
 					<p>${item.americanized}</p>
+					<h3>Definition:</h3>
 					<p class="definition">${item.definition}</p>
-				</aside?
+				</aside>
+				<div class="line"></div>
 			`
 
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
@@ -37,7 +37,7 @@ fetch('assets/glossary.json')
 	.then(response => response.json())
 	.then(glossary => {
 		// And passes the data to the function, above!
-		renderItems(glossary.reverse()) // In reverse order
+		renderItems(glossary) // In order
 	})
 
 
