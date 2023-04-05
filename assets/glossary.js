@@ -18,10 +18,10 @@ const renderItems = (glossary) => {
 					<h2 class="term">${item.title}</h2>
 				</button>
 				<aside>
-					<h3>Americanized:</h3>
-					<p>${item.americanized}</p>
 					<h3>Definition:</h3>
 					<p class="definition">${item.definition}</p>
+					<h3>Americanized:</h3>
+					<p>${item.americanized}</p>
 				</aside>
 				<div class="line"></div>
 			`

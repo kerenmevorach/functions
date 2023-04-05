@@ -118,4 +118,8 @@ input{
     :root{
         --header: 120px;
     }
+
+    p{
+        max-width: 52ch;
+    }
 }
