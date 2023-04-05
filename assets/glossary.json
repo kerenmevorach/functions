@@ -52,5 +52,54 @@
 		"americanized" : "Cigarette",
 		"definition": "A cigarette. A common phrase using this term is <em>hack a dart</em>",
 		"example": ""
+	},
+	{
+		"title": "Dep",
+		"americanized" : "Corner Store",
+		"definition": "Short for dépanneur, the term for a convenience store in the French-speaking province Quebec.",
+		"example": ""
+	},
+	{
+		"title": "Double Double",
+		"americanized" : "A coffee with 2 creams and 2 sugars.",
+		"definition": "A common way for a Canadian to order their coffee — double cream, double sugar. Typically from Tim Hortons ♥",
+		"example": ""
+	},
+	{
+		"title": "Eh",
+		"americanized" : "Right?",
+		"definition": "On its own or added to the end of a sentence, it can mean ‘right?’, ‘what?’, but can also be added to most sentences just for a good time.",
+		"example": ""
+	},
+	{
+		"title": "Freezie",
+		"americanized" : "Ice Pop",
+		"definition": "A nostalgic summertime treat consisting of ice, sugar, and food-coloring that comes in a clear plastic tube. Red is the best flavor. End of discussion",
+		"example": ""
+	},
+	{
+		"title": "GTs",
+		"americanized" : "Good Times",
+		"definition": "GTs is short for good times, not gin & tonics",
+		"example": ""
+	},
+	{
+		"title": "Hang a Larry",
+		"americanized" : "Make a left",
+		"definition": "Make a left",
+		"example": ""
+	},
+	{
+		"title": "Hang a Roger",
+		"americanized" : "Make a right",
+		"definition": "Make a right",
+		"example": ""
+	},
+	{
+		"title": "Harvey's",
+		"americanized" : "",
+		"definition": "",
+		"example": ""
 	}
+	
 ]

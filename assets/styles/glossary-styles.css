@@ -24,7 +24,7 @@ h2{
 }
 
 #glossary-container{
-    margin-top: calc(var(--spacing) - 25px);
+    margin-top: calc(var(--spacing) - 15px);
     margin-left: calc(var(--left-margin) - 12px);
 }
 
