@@ -19,24 +19,25 @@ $(function() {
         console.log('inside the function')
         // console.log(data)
 
-        //print out every title
-        // for (i = 0; i < data.length; i = i + 1){
-        //     console.log(data[i].tags)
-        // }
-
         function translateTerm() {
-        
+
             //clear any previous searches
             translatedTermList.innerHTML = ''
     
-            var termToTranslate = document.querySelector('#term-to-translate').value
-            console.log(termToTranslate.toLowerCase())
+            let termToTranslate = document.querySelector('#term-to-translate').value.toLowerCase();
+            console.log(termToTranslate);
+
+            let termFound = false;
+
+            data.forEach((item) => {
            
             for (i = 0; i < data.length; i++){
                 // console.log(data[i].tags)
 
-                if (data[i].tags.includes(termToTranslate.toLowerCase())) {
-                // if (data[i].tags == termToTranslate) {
+                if (item.tags.includes(termToTranslate)) {
+
+                    found = true;
+                // if (data[i].tags.includes(termToTranslate)) {
     
                     // Make the `li`
                     const listItem = document.createElement('li') 
@@ -44,36 +45,37 @@ $(function() {
                     //Create the item details
                     const itemDetails =
                         `
-                            <h2>${data[i].title}</h2>
+                            <h2>${item.title}</h2>
                             <h3>Definition:</h3>
-                            <p class="definition">${data[i].definition}</p>
+                            <p class="definition">${item.definition}</p>
                             <h3>Americanized:</h3>
-                            <p>${data[i].americanized}</p>
+                            <p>${item.americanized}</p>
                             <div class="line"></div>
-                        `
+                        `;
             
+                    //add the item details to the list item
                     listItem.innerHTML = itemDetails
 
-                    //Add the list item to the ul or translated terms list
+                    //Add the list item to the ul / translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
-                    else {
-                        translatedTermList.innerHTML = ''
-                        //have a few random statements to choose from, but for now just use this.
-                        translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?"
-                    }
+                    
+                }
+            });
+
+            if (!found) {
+                translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
             }
+        
+            };
     
                 // var termToTranslate = document.querySelector('#term-to-translate').value
-    
-        }
     
         // on click, run the translate function
         translateButton.onclick = () =>{
             translateTerm();
             console.log('translate');
         }
-
     });
-
+    
 });
