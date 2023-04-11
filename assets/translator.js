@@ -14,7 +14,7 @@ const renderItems = (glossary) => {
 
     
     function translateTerm() {
-
+        
         //clear any previous searches
         translatedTermList.innerHTML = ''
 
@@ -52,10 +52,16 @@ const renderItems = (glossary) => {
                             <p>${item.americanized[i]}</p>
                             <div class="line"></div>
                         `
+
+    
+                 // listItem.innerHTML = termToTranslate
+                    // translatedTermList.appendChild(listItem)
             
                     //Add the item details to the list item
-                    listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
+                    // listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
             
+                    listItem.innerHTML = itemDetails
+
                     //Add the list item to the ul or translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }

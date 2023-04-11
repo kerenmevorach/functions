@@ -26,7 +26,8 @@ const renderItems = (glossary) => {
 				<div class="line"></div>
 			`
 
-		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
+		// listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
+		listItem.innerHTML = itemDetails
 		listItem.classList.add('word-set')
 
 		glossaryList.appendChild(listItem) // Then add the whole `li` into the `ul`
