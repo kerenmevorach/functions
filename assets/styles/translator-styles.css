@@ -24,11 +24,11 @@ form{
     display: none;
 }
 
-#term-translator{
+#term-to-translate{
     font-family: 'Authentic Sans';
     font-size: var(--body);
     color: rgb(146, 146, 146);
-    width: 330px;
+    width: 308px;
     height: 40px;
     border-radius: 25px;
     padding: 20px;
@@ -63,7 +63,7 @@ form{
         max-width: 20ch;
     }
 
-    #term-translator{
+    #term-to-translate{
         width: 610px;
         border: 1px var(--text-color) solid;
     }
@@ -80,7 +80,7 @@ form{
         --new-header: calc(var(--header)/1.3);
     }
 
-    #term-translator{
+    #term-to-translate{
         width: 950px;
         height: 70px;
         border-radius: 50px;
