@@ -53,7 +53,12 @@ const renderItems = (glossary) => {
                     //Add the list item to the ul or translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
-                 }
+                    else {
+                        translatedTermList.innerHTML = ''
+                        //have a few random statements to choose from, but for now just use this.
+                        translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?"
+                     }
+                 } 
 	            })
 
             }
