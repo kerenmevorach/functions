@@ -1,3 +1,8 @@
+//references
+//https://www.w3schools.com/js/js_json_arrays.asp
+//https://www.w3schools.com/js/js_json_objects.asp
+//https://dev.to/emmaccen/how-to-create-a-global-json-search-algorithm-in-javascript-55ko
+
 // Function to render your items
 const renderItems = (glossary) => {
 	// The `ul` where the items will be inserted
@@ -15,9 +20,9 @@ const renderItems = (glossary) => {
 
         var termToTranslate = document.querySelector('#term-to-translate').value
         console.log(termToTranslate)
-        const listItem = document.createElement('li') 
-        listItem.innerHTML = termToTranslate
-        translatedTermList.appendChild(listItem)
+        // const listItem = document.createElement('li') 
+        // listItem.innerHTML = termToTranslate
+        // translatedTermList.appendChild(listItem)
     
         // Loop through each item in the collection array
 	    glossary.forEach(item => {
@@ -31,7 +36,8 @@ const renderItems = (glossary) => {
             for (let i in item.tags) {
 
                 // if (termToTranslate.includes(i)) {
-                if (item.tags.includes(termToTranslate)) {
+                // if (item.tags.includes(termToTranslate)) {
+                if (item.tags = termToTranslate) {
 
                     // Make the `li`
                     const listItem = document.createElement('li') 
@@ -39,7 +45,7 @@ const renderItems = (glossary) => {
                     //Create the item details
                     const itemDetails =
                         `
-                            <h2 class="term">${item.title[i]}</h2>
+                            <h2>${item.title[i]}</h2>
                             <h3>Definition:</h3>
                             <p class="definition">${item.definition[i]}</p>
                             <h3>Americanized:</h3>
