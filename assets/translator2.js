@@ -38,6 +38,7 @@ $(function() {
                 console.log(termToTranslate)
 
                 if (data[i].tags.includes(termToTranslate)) {
+                // if (data[i].tags == termToTranslate) {
     
                     // Make the `li`
                     const listItem = document.createElement('li') 
