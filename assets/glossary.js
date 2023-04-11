@@ -68,3 +68,4 @@ fetch('assets/glossary.json')
 		// And passes the data to the function, above!
 		renderItems(glossary) // In order
 	})
+

@@ -22,13 +22,16 @@ const renderItems = (glossary) => {
         // Loop through each item in the collection array
 	    glossary.forEach(item => {
 
+            var termToTranslate = document.querySelector('#term-to-translate').value
+
             // myArray = JSON.parse(glossary);
             // myObj.title[0];
             // console.log(myObj.title[0])
 
             for (let i in item.tags) {
-                //this for loop converts the input text, finds the corresponding image, and displays it on the page
-                if (termToTranslate.includes(i)) {
+
+                // if (termToTranslate.includes(i)) {
+                if (item.tags.includes(termToTranslate)) {
 
                     // Make the `li`
                     const listItem = document.createElement('li') 
