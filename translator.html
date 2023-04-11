@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/styles/reset.css">
         <link rel="stylesheet" href="assets/styles/common.css">
-        <link rel="stylesheet" href="assets/styles/translator-styles.css">
+        <link rel="stylesheet" href="assets/styles/translator.css">
         <script src="assets/translator.js" async defer></script>
     </head>
     <body>
@@ -21,11 +21,11 @@
             <a class="button" href="glossary.html">Glossary</a>
         </nav>
             
-        <form>
+        <form autocomplete="off">
 			<label for="term-to-translate" class="translator-label active">What Canadian term would&nbsp;you like&nbsp;to&nbsp;translate?</label>
             <div class="text-field-input">
-                <input id="term-to-translate" name="term-to-translate" placeholder="Type here..." required type="text">
-                <button class="button translate-button">Translate</button>
+                <input type="text" id="term-to-translate" name="term-to-translate" placeholder="Type here..." required type="text">
+                <button type="button" class="button translate-button">Translate</button>
             </div>
         </form>
 
