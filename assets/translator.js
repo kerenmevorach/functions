@@ -37,7 +37,7 @@ const renderItems = (glossary) => {
 
                 // if (termToTranslate.includes(i)) {
                 // if (item.tags.includes(termToTranslate)) {
-                if (item.tags = termToTranslate) {
+                if (item.tags.includes(termToTranslate)) {
 
                     // Make the `li`
                     const listItem = document.createElement('li') 

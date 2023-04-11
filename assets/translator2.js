@@ -32,45 +32,37 @@ $(function() {
             var termToTranslate = document.querySelector('#term-to-translate').value
             console.log(termToTranslate)
            
-            for (let i = 0; i < data.length; i++){
+            for (i = 0; i < data.length; i = i + 1){
                 // console.log(data[i].tags)
-                console.log(termToTranslate);
 
-                let item = data[i];
-                let tags = item.tags;
+                console.log(termToTranslate)
 
-                for (let t = 0; t < tags.length; t++){
-                    let tag = tags[t];
-
-                    if (tag.includes(termToTranslate)) {
+                if (data[i].tags.includes(termToTranslate)) {
     
-                        // Make the `li`
-                        const listItem = document.createElement('li') 
-    
-                        //Create the item details
-                        const itemDetails =
-                            `
-                                <h2>${item.title}</h2>
-                                <h3>Definition:</h3>
-                                <p class="definition">${item.definition}</p>
-                                <h3>Americanized:</h3>
-                                <p>${item.americanized}</p>
-                                <div class="line"></div>
-                            `
-                
-                        listItem.innerHTML = itemDetails
-                        //Add the list item to the ul or translated terms list
-                        translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
-                        
+                    // Make the `li`
+                    const listItem = document.createElement('li') 
+
+                    //Create the item details
+                    const itemDetails =
+                        `
+                            <h2>${data[i].title}</h2>
+                            <h3>Definition:</h3>
+                            <p class="definition">${data[i].definition}</p>
+                            <h3>Americanized:</h3>
+                            <p>${data[i].americanized}</p>
+                            <div class="line"></div>
+                        `
+            
+                    listItem.innerHTML = itemDetails
+
+                    //Add the list item to the ul or translated terms list
+                    translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
-                        else {
-                            translatedTermList.innerHTML = ''
-                            //have a few random statements to choose from, but for now just use this.
-                            translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?"
-                        }
-                }
-
-                
+                    else {
+                        translatedTermList.innerHTML = ''
+                        //have a few random statements to choose from, but for now just use this.
+                        translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?"
+                    }
             }
     
                 var termToTranslate = document.querySelector('#term-to-translate').value
