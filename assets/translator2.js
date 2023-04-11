@@ -1,17 +1,15 @@
 //reference
 //https://www.youtube.com/watch?v=kIRp6HOQzP8
-
-//define an array to hold the slideshow data 
-// let slideshow = [];
+//https://www.w3schools.com/js/js_json_arrays.asp
+//https://www.w3schools.com/js/js_json_objects.asp
+//https://dev.to/emmaccen/how-to-create-a-global-json-search-algorithm-in-javascript-55ko
 
 let datafile = "assets/glossary.json";
 
 const translateButton = document.querySelector('.translate-button');
 const translatedTermList = document.querySelector('#translated-term-container');
 //for some reason this needs to be repeated here and within the function for the list item to appear in the dom
-// let termToTranslate = document.querySelector('#term-to-translate').value;
 
-//ready function
 $(function() { 
 
     //get file  
@@ -31,12 +29,12 @@ $(function() {
 
             data.forEach((item) => {
            
-            for (i = 0; i < data.length; i++){
+            // for (i = 0; i < data.length; i++){
                 // console.log(data[i].tags)
 
                 if (item.tags.includes(termToTranslate)) {
 
-                    found = true;
+                    termFound = true;
                 // if (data[i].tags.includes(termToTranslate)) {
     
                     // Make the `li`
@@ -60,10 +58,10 @@ $(function() {
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
                     
-                }
+                // }
             });
 
-            if (!found) {
+            if (!termFound) {
                 translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
             }
         
