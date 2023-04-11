@@ -9,7 +9,7 @@ let datafile = "assets/glossary.json";
 const translateButton = document.querySelector('.translate-button');
 const translatedTermList = document.querySelector('#translated-term-container');
 //for some reason this needs to be repeated here and within the function for the list item to appear in the dom
-let termToTranslate = document.querySelector('#term-to-translate').value;
+// let termToTranslate = document.querySelector('#term-to-translate').value;
 
 //ready function
 $(function() { 
@@ -30,14 +30,12 @@ $(function() {
             translatedTermList.innerHTML = ''
     
             var termToTranslate = document.querySelector('#term-to-translate').value
-            console.log(termToTranslate)
+            console.log(termToTranslate.toLowerCase())
            
-            for (i = 0; i < data.length; i = i + 1){
+            for (i = 0; i < data.length; i++){
                 // console.log(data[i].tags)
 
-                console.log(termToTranslate)
-
-                if (data[i].tags.includes(termToTranslate)) {
+                if (data[i].tags.includes(termToTranslate.toLowerCase())) {
                 // if (data[i].tags == termToTranslate) {
     
                     // Make the `li`
@@ -66,8 +64,7 @@ $(function() {
                     }
             }
     
-                var termToTranslate = document.querySelector('#term-to-translate').value
-    
+                // var termToTranslate = document.querySelector('#term-to-translate').value
     
         }
     
