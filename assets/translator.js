@@ -1,8 +1,3 @@
-//references
-//https://www.w3schools.com/js/js_json_arrays.asp
-//https://www.w3schools.com/js/js_json_objects.asp
-//https://dev.to/emmaccen/how-to-create-a-global-json-search-algorithm-in-javascript-55ko
-
 // Function to render your items
 const renderItems = (glossary) => {
 	// The `ul` where the items will be inserted
@@ -33,46 +28,43 @@ const renderItems = (glossary) => {
             // myObj.title[0];
             // console.log(myObj.title[0])
 
-            for (let i in item.tags) {
+            termFound = false;
 
-                // if (termToTranslate.includes(i)) {
-                // if (item.tags.includes(termToTranslate)) {
-                if (item.tags.includes(termToTranslate)) {
+            if (item.tags.includes(termToTranslate)) {
+                // if (item.tags == termToTranslate) {
 
+                    termFound = true;
+                    // if (data[i].tags.includes(termToTranslate)) {
+    
                     // Make the `li`
                     const listItem = document.createElement('li') 
 
                     //Create the item details
                     const itemDetails =
                         `
-                            <h2>${item.title[i]}</h2>
+                            <h2>${item.title}</h2>
                             <h3>Definition:</h3>
-                            <p class="definition">${item.definition[i]}</p>
+                            <p class="definition">${item.definition}</p>
                             <h3>Americanized:</h3>
-                            <p>${item.americanized[i]}</p>
+                            <p>${item.americanized}</p>
                             <div class="line"></div>
-                        `
-
-    
-                 // listItem.innerHTML = termToTranslate
-                    // translatedTermList.appendChild(listItem)
+                        `;
             
-                    //Add the item details to the list item
-                    // listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
-            
+                    //add the item details to the list item
                     listItem.innerHTML = itemDetails
 
-                    //Add the list item to the ul or translated terms list
+                    //Add the list item to the ul / translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
-                    else {
-                        translatedTermList.innerHTML = ''
-                        //have a few random statements to choose from, but for now just use this.
-                        translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?"
-                     }
-                 } 
+
+
 	            })
 
+                //if the term is not found, print this statement
+                if (!termFound) {
+                    translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
+                }
+        
             }
 
         // on click, run the translate function

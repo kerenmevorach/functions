@@ -1,41 +1,44 @@
-//reference
+//references
 //https://www.youtube.com/watch?v=kIRp6HOQzP8
 //https://www.w3schools.com/js/js_json_arrays.asp
 //https://www.w3schools.com/js/js_json_objects.asp
-//https://dev.to/emmaccen/how-to-create-a-global-json-search-algorithm-in-javascript-55ko
+//https://stackoverflow.com/questions/45615509/search-through-json-with-keywords
 
 let datafile = "assets/glossary.json";
 
 const translateButton = document.querySelector('.translate-button');
 const translatedTermList = document.querySelector('#translated-term-container');
-//for some reason this needs to be repeated here and within the function for the list item to appear in the dom
 
 $(function() { 
 
     //get file  
     $.getJSON(datafile, function(data) { 
-        console.log('inside the function')
         // console.log(data)
 
+        //this function will translate whatever the user types in 
         function translateTerm() {
 
             //clear any previous searches
             translatedTermList.innerHTML = ''
     
-            let termToTranslate = document.querySelector('#term-to-translate').value.toLowerCase();
+            //get term value, make it lowercase
+            let termToTranslate = document.querySelector('#term-to-translate').value.toString().toLowerCase();
+            
             console.log(termToTranslate);
 
             let termFound = false;
 
             data.forEach((item) => {
            
+            // FOR LOOP WAS WRONG!
             // for (i = 0; i < data.length; i++){
                 // console.log(data[i].tags)
 
                 if (item.tags.includes(termToTranslate)) {
+                // if (item.tags == termToTranslate) {
 
                     termFound = true;
-                // if (data[i].tags.includes(termToTranslate)) {
+                    // if (data[i].tags.includes(termToTranslate)) {
     
                     // Make the `li`
                     const listItem = document.createElement('li') 
@@ -57,17 +60,15 @@ $(function() {
                     //Add the list item to the ul / translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
-                    
-                // }
+                
             });
 
+            //if the term is not found, print this statement
             if (!termFound) {
                 translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
             }
         
             };
-    
-                // var termToTranslate = document.querySelector('#term-to-translate').value
     
         // on click, run the translate function
         translateButton.onclick = () =>{
