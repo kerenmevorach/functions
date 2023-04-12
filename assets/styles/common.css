@@ -73,6 +73,7 @@ button:hover{
 
 h1{
     font-size: var(--header);
+    line-height: var(--header);
     /* font-weight: bold; */
     margin-left: var(--left-margin);
     margin-top: 114px;
