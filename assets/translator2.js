@@ -65,7 +65,9 @@ $(function() {
 
             //if the term is not found, print this statement
             if (!termFound) {
-                translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
+                const listItem = document.createElement('li') 
+                listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                translatedTermList.appendChild(listItem)
             }
         
             };
