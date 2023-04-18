@@ -98,7 +98,7 @@ p{
     margin-left: 26px;
     /* height: 326px; */
     height: auto;
-    max-height: 326px;
+    max-height: 346px;
     overflow: scroll;
     border-left: 1px var(--text-color) solid;
     border-right: 1px var(--text-color) solid;

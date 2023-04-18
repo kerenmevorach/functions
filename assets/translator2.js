@@ -52,7 +52,8 @@ $(function() {
                         `;
             
                     //add the item details to the list item
-                    listItem.innerHTML = itemDetails
+                    listItem.innerHTML = itemDetails;
+                    listItem.classList.add('word-set');
 
                     //Add the list item to the ul / translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
@@ -63,7 +64,8 @@ $(function() {
             //if the term is not found, print this statement
             if (!termFound) {
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                // listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                listItem.innerHTML = "";
                 translatedTermList.appendChild(listItem)
             }
         
@@ -78,12 +80,19 @@ $(function() {
             translatedTermList.classList.add('active');
             translatedTermList.style.display = "block";
 
+            const wordSet = document.querySelectorAll('.word-set');    
+    
+            wordSet.forEach((menuitem) => {
+            menuitem.querySelector('.menuitem').onclick = () =>{
+                console.log('click');
+                menuitem.style.backgroundColor = "purple";
+            }
+        })	
+
         }
+
         
-        // translateButton.onclick = () =>{
-        //     translateTerm();
-        //     console.log('translate');
-        // }
+        
     });
     
 });

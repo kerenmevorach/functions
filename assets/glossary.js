@@ -27,10 +27,10 @@ const renderItems = (glossary) => {
 			`
 
 		// listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
-		listItem.innerHTML = itemDetails
-		listItem.classList.add('word-set')
+		listItem.innerHTML = itemDetails;
+		listItem.classList.add('word-set');
 
-		glossaryList.appendChild(listItem) // Then add the whole `li` into the `ul`
+		glossaryList.appendChild(listItem); // Then add the whole `li` into the `ul`
 	})
 
 	const wordSet = document.querySelectorAll('.word-set');
