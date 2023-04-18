@@ -34,7 +34,7 @@ form{
     height: 40px;
     /* border-radius: 25px; */
     padding: 20px;
-    padding-right: 144px;
+    /* padding-right: 144px; */
     padding-left: 15px;
     position: relative;
 }
@@ -91,9 +91,10 @@ p{
     width: 60vw;
     margin-top: -12px;
     margin-left: 26px;
+    padding-bottom: -100px;
     /* height: 326px; */
     height: auto;
-    max-height: 346px;
+    max-height: 325px;
     overflow: scroll;
     border-left: 1px var(--text-color) solid;
     border-right: 1px var(--text-color) solid;
@@ -135,9 +136,14 @@ p{
         max-width: 20ch;
     }
 
+    #translated-term-container.active{
+        width: 439px;
+        margin-top: -12px;
+    }
+
     .translate-button{
         left: -5px;
-        height: 43px;
+        height: 42px;
         width: 121px;
         /* border: 1.5px var(--text-color) solid; */
     }
@@ -152,17 +158,31 @@ p{
         margin-left: calc(var(--left-margin));
     }
     
+    .menuitem{
+        padding-bottom: 75px;
+    }
 }
 
-@media (min-width: 712px) {
+@media (min-width: 716px) {
+
+    #translated-term-container.active{
+        padding-bottom: -100px;
+    }
     
     #term-to-translate{
         width: 561px;
+        height: 43px;
     }
 
     #translated-term-container.active{
-        width: 580px;
+        width: 561px;
+        margin-top: -11px;
     }
+
+    /* .menuitem{
+        height: 10px;
+    } */
+
 }
 
 @media (min-width: 1100px) {
@@ -173,7 +193,8 @@ p{
     }
 
     #translated-term-container.active{
-        width: 580px;
+        width: 675px;
+        margin-top: -12px;
     }
 
     .translate-button{
