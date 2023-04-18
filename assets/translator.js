@@ -82,7 +82,7 @@ $(function() {
             
             console.log(termToTranslate);
 
-            if (termToTranslate == "") {
+            if (termToTranslate == "" || termToTranslate.length < 3) {
                 // clear
                 selectedTermList.innerHTML = '';
         
