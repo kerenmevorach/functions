@@ -17,7 +17,8 @@ form{
     margin-top: var(--spacing);
     color: var(--text-color);
     display: block;
-    max-width: 12ch;
+    max-width: 20ch;
+    padding-right: 5px;
 }
 
 .translator-label{
@@ -28,7 +29,8 @@ form{
     font-family: 'Authentic Sans';
     font-size: var(--body);
     color: rgb(146, 146, 146);
-    width: 308px;
+    /* width: 308px; */
+    width: 60vw;
     height: 40px;
     /* border-radius: 25px; */
     padding: 20px;
@@ -38,12 +40,12 @@ form{
 }
 
 .translate-button{
-    font-size: var(--button);
+    font-size: var(--body);
     height: 42px;
     background-color: var(--text-color);
     color: var(--other-color);
     position: relative;
-    left: -82px;
+    left: -5px;
     top: -5px;
     border-radius: 0px;
     width: 100px;
@@ -82,18 +84,11 @@ p{
 
 #translated-term-container{
     display: none;
-    width: 231px;
-    margin-top: -12px;
-    margin-left: 26px;
-
-    border-left: 1px var(--text-color) solid;
-    border-right: 1px var(--text-color) solid;
-    border-bottom: 1px var(--text-color) solid;
-    border-top: 1px transparent solid;
 }
 
 #translated-term-container.active{
-    width: 231px;
+    /* width: 231px; */
+    width: 60vw;
     margin-top: -12px;
     margin-left: 26px;
     /* height: 326px; */
@@ -123,25 +118,27 @@ p{
 }
 
 
+@media (min-width: 576px) {
+    
+    #term-to-translate{
+        width: 439px;
+    }
+
+    #translated-term-container.active{
+        width: 439px;
+    }
+}
 
 
 @media (min-width: 700px) {
-    /* :root{
-        --new-header: 50px;
-    } */
-
     .translator-label.active{
         max-width: 20ch;
     }
 
-    #term-to-translate{
-        width: 610px;
-        border: 1px var(--text-color) solid;
-    }
-
     .translate-button{
-        left: -40px;
+        left: -5px;
         height: 43px;
+        width: 121px;
         /* border: 1.5px var(--text-color) solid; */
     }
 
@@ -151,14 +148,21 @@ p{
     }
     
     
-    h3{
-        /* margin-left: calc(var(--left-margin)); */
-    }
-    
     p{
         margin-left: calc(var(--left-margin));
     }
     
+}
+
+@media (min-width: 712px) {
+    
+    #term-to-translate{
+        width: 580px;
+    }
+
+    #translated-term-container.active{
+        width: 580px;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -169,16 +173,17 @@ p{
     #term-to-translate{
         width: 950px;
         height: 70px;
-        border-radius: 50px;
+        /* border-radius: 50px; */
         padding-left: 30px;
         border: 1.5px var(--text-color) solid;
+    }
 
- 
+    #translated-term-container.active{
+        width: 886px;
     }
 
     .translate-button{
         left: -70px;
-        border-radius: 50px;
         height: 70px;
         padding-left: 20px;
         padding-right: 20px;

@@ -1,36 +1,40 @@
-// Function to render your items
-const renderItems = (glossary) => {
-	// The `ul` where the items will be inserted
+//references
+//https://www.youtube.com/watch?v=kIRp6HOQzP8
+//https://www.w3schools.com/js/js_json_arrays.asp
+//https://www.w3schools.com/js/js_json_objects.asp
+//https://stackoverflow.com/questions/45615509/search-through-json-with-keywords
 
-    const translateButton = document.querySelector('.translate-button');
-    const translatedTermList = document.querySelector('#translated-term-container');
-    //for some reason this needs to be repeated here and within the function for the list item to appear in the dom
-    let termToTranslate = document.querySelector('#term-to-translate').value;
+let datafile = "assets/glossary.json";
 
+const translateButton = document.querySelector('.translate-button');
+const translatedTermList = document.querySelector('#translated-term-container');
+
+$(function() { 
+
+    //get file  
+    $.getJSON(datafile, function(data) { 
+        // console.log(data)
+
+        //this function will translate whatever the user types in 
+        function translateTerm() {
+
+            //clear any previous searches
+            translatedTermList.innerHTML = ''
     
-    function translateTerm() {
-        
-        //clear any previous searches
-        translatedTermList.innerHTML = ''
+            //get term value, make it lowercase
+            let termToTranslate = document.querySelector('#term-to-translate').value.toString().toLowerCase();
+            
+            console.log(termToTranslate);
 
-        var termToTranslate = document.querySelector('#term-to-translate').value
-        console.log(termToTranslate)
-        // const listItem = document.createElement('li') 
-        // listItem.innerHTML = termToTranslate
-        // translatedTermList.appendChild(listItem)
-    
-        // Loop through each item in the collection array
-	    glossary.forEach(item => {
+            let termFound = false;
 
-            var termToTranslate = document.querySelector('#term-to-translate').value
+            data.forEach((item) => {
+           
+            // FOR LOOP WAS WRONG!
+            // for (i = 0; i < data.length; i++){
+                // console.log(data[i].tags)
 
-            // myArray = JSON.parse(glossary);
-            // myObj.title[0];
-            // console.log(myObj.title[0])
-
-            termFound = false;
-
-            if (item.tags.includes(termToTranslate)) {
+                if (item.tags.includes(termToTranslate)) {
                 // if (item.tags == termToTranslate) {
 
                     termFound = true;
@@ -42,51 +46,54 @@ const renderItems = (glossary) => {
                     //Create the item details
                     const itemDetails =
                         `
-                            <h2>${item.title}</h2>
-                            <h3>Definition:</h3>
-                            <p class="definition">${item.definition}</p>
-                            <h3>Americanized:</h3>
-                            <p>${item.americanized}</p>
-                            <div class="line"></div>
+                            <div class="menuitem">
+                                <h3>${item.title}</h3>
+                            </div>
                         `;
             
                     //add the item details to the list item
-                    listItem.innerHTML = itemDetails
+                    listItem.innerHTML = itemDetails;
+                    listItem.classList.add('word-set');
 
                     //Add the list item to the ul / translated terms list
                     translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
                     }
+                
+            });
 
-
-	            })
-
-                //if the term is not found, print this statement
-                if (!termFound) {
-                    translatedTermList.innerHTML = "Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?";
-                }
-        
+            //if the term is not found, print this statement
+            if (!termFound) {
+                const listItem = document.createElement('li') 
+                // listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                listItem.innerHTML = "";
+                translatedTermList.appendChild(listItem)
             }
-
+        
+            };
+    
+        let translateBox = document.querySelector('#term-to-translate')
         // on click, run the translate function
-        translateButton.onclick = () =>{
+        
+        translateBox.oninput = () =>{
             translateTerm();
             console.log('translate');
+            translatedTermList.classList.add('active');
+            translatedTermList.style.display = "block";
+
+            const wordSet = document.querySelectorAll('.word-set');    
+    
+            wordSet.forEach((menuitem) => {
+            menuitem.querySelector('.menuitem').onclick = () =>{
+                console.log(menuitem);
+                translateBox.innerHTML = menuitem
+                // menuitem.style.backgroundColor = "purple";
+            }
+        })	
+
         }
-}
 
-// Fetch gets your JSON file…
-fetch('assets/glossary.json')
-	.then(response => response.json())
-	.then(glossary => {
-		// And passes the data to the function, above!
-		renderItems(glossary) // In order
-	})
-
-
-        // on click, run the translate function
-        //translate function:
-        //for each term, loop through the glossary json, or loop through the tags
-        //if the searched term matches a tag,
-        //display the name of the term (list item)
-        //display the definition (list item)
-        //display the americanized version
+        
+        
+    });
+    
+});
