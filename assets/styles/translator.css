@@ -30,20 +30,23 @@ form{
     color: rgb(146, 146, 146);
     width: 308px;
     height: 40px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     padding: 20px;
     padding-right: 144px;
+    padding-left: 15px;
     position: relative;
 }
 
 .translate-button{
-    font-size: var(--body);
+    font-size: var(--button);
     height: 42px;
     background-color: var(--text-color);
     color: var(--other-color);
     position: relative;
-    left: -93px;
+    left: -82px;
     top: -5px;
+    border-radius: 0px;
+    width: 100px;
 }
 
 .text-field-input{
@@ -59,8 +62,10 @@ h2{
 
 
 h3{
-    margin-left: calc(var(--left-margin) + 15px);
-    margin-top: 20px;
+    /* margin-left: calc(var(--left-margin) + 15px); */
+    margin: 14px;
+    margin-top: 16px; 
+    /* margin-top: 1px; */
     color: var(--text-color);
 }
 
@@ -73,6 +78,50 @@ p{
 .translate-button:hover{
     background-color: rgb(255, 81, 81);
 }
+
+
+#translated-term-container{
+    display: none;
+    width: 231px;
+    margin-top: -12px;
+    margin-left: 26px;
+
+    border-left: 1px var(--text-color) solid;
+    border-right: 1px var(--text-color) solid;
+    border-bottom: 1px var(--text-color) solid;
+    border-top: 1px transparent solid;
+}
+
+#translated-term-container.active{
+    width: 231px;
+    margin-top: -12px;
+    margin-left: 26px;
+    /* height: 326px; */
+    height: auto;
+    max-height: 326px;
+    overflow: scroll;
+    border-left: 1px var(--text-color) solid;
+    border-right: 1px var(--text-color) solid;
+    border-bottom: 1px var(--text-color) solid;
+    border-top: 1px transparent solid;
+}
+
+.menuitem{
+    border-top: 1px var(--text-color) solid;
+    height: 63px;
+}
+
+.menuitem:hover{
+    background-color: var(--text-color);
+    cursor: pointer;
+    color: var(--other-color);
+}
+
+.menuitem:hover h3{
+    /* color: var(--other-color); */
+    color: white;
+}
+
 
 
 
@@ -103,7 +152,7 @@ p{
     
     
     h3{
-        margin-left: calc(var(--left-margin));
+        /* margin-left: calc(var(--left-margin)); */
     }
     
     p{

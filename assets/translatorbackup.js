@@ -46,9 +46,12 @@ $(function() {
                     //Create the item details
                     const itemDetails =
                         `
-                            <div class="menuitem">
-                                <h3>${item.title}</h3>
-                            </div>
+                            <h2>${item.title}</h2>
+                            <h3>Definition:</h3>
+                            <p class="definition">${item.definition}</p>
+                            <h3>Americanized:</h3>
+                            <p>${item.americanized}</p>
+                            <div class="line"></div>
                         `;
             
                     //add the item details to the list item
@@ -75,9 +78,6 @@ $(function() {
         translateBox.oninput = () =>{
             translateTerm();
             console.log('translate');
-            translatedTermList.classList.add('active');
-            translatedTermList.style.display = "block";
-
         }
         
         // translateButton.onclick = () =>{
