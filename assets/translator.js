@@ -16,7 +16,7 @@ $(function() {
         // console.log(data)
 
         //this function will translate whatever the user types in 
-        function translateTerm() {
+        function getTerm() {
 
             //clear any previous searches
             translatedTermList.innerHTML = ''
@@ -70,29 +70,95 @@ $(function() {
             }
         
             };
+
+            function searchTerm() {
+
+                //clear any previous searches
+                translatedTermList.innerHTML = ''
+        
+                //get term value, make it lowercase
+                let termToTranslate = document.querySelector('#term-to-translate').value.toString().toLowerCase();
+                
+                console.log(termToTranslate);
+    
+                let termFound = false;
+    
+                data.forEach((item) => {
+               
+                // FOR LOOP WAS WRONG!
+                // for (i = 0; i < data.length; i++){
+                    // console.log(data[i].tags)
+    
+                    if (item.tags.includes(termToTranslate)) {
+                    // if (item.tags == termToTranslate) {
+    
+                        termFound = true;
+                        // if (data[i].tags.includes(termToTranslate)) {
+        
+                        // Make the `li`
+                        const listItem = document.createElement('li') 
+    
+                        //Create the item details
+                        const itemDetails =
+                            `
+                                <h2>${item.title}</h2>
+                                <h3>Definition:</h3>
+                                <p class="definition">${item.definition}</p>
+                                <h3>Americanized:</h3>
+                                <p>${item.americanized}</p>
+                                <div class="line"></div>
+                            `;
+                
+                        //add the item details to the list item
+                        listItem.innerHTML = itemDetails;
+                        listItem.classList.add('word-set');
+    
+                        //Add the list item to the ul / translated terms list
+                        translatedTermList.appendChild(listItem) // Then add the whole `li` into the `ul`
+                        }
+                    
+                });
+    
+                //if the term is not found, print this statement
+                // if (!termFound) {
+                //     const listItem = document.createElement('li') 
+                //     // listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                //     listItem.innerHTML = "";
+                //     translatedTermList.appendChild(listItem)
+                // }
+            
+                };
+
+
     
         let translateBox = document.querySelector('#term-to-translate')
         // on click, run the translate function
         
         translateBox.oninput = () =>{
-            translateTerm();
+            getTerm();
             console.log('translate');
             translatedTermList.classList.add('active');
             translatedTermList.style.display = "block";
-
             const wordSet = document.querySelectorAll('.word-set');    
+            translateBox.style.color = "black";
     
             wordSet.forEach((menuitem) => {
             menuitem.querySelector('.menuitem').onclick = () =>{
                 console.log(menuitem);
-                translateBox.innerHTML = menuitem
-                // menuitem.style.backgroundColor = "purple";
+                let selectedItem = menuitem.querySelector('h3').textContent;
+                translateBox.value = selectedItem;
+                translatedTermList.classList.remove('active');
+                translatedTermList.style.display = "none";
+                // menuitem.style.backgroundColor = "purple";    
             }
-        })	
 
+        })	
         }
 
-        
+        translateButton.onclick = () =>{
+            searchTerm();
+            console.log('translate')
+        }
         
     });
     
