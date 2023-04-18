@@ -28,7 +28,8 @@ form{
 #term-to-translate{
     font-family: 'Authentic Sans';
     font-size: var(--body);
-    color: rgb(146, 146, 146);
+    color: black;
+    /* color: rgb(146, 146, 146); */
     /* width: 308px; */
     width: 60vw;
     height: 40px;
@@ -49,6 +50,7 @@ form{
     top: -5px;
     border-radius: 0px;
     width: 100px;
+    text-align: center;
 }
 
 .text-field-input{

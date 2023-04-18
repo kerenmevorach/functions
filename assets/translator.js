@@ -63,6 +63,12 @@ $(function() {
                         translatedTermList.appendChild(listItem)
                     }
             });
+
+            if (!termFound) {
+                const listItem = document.createElement('li') 
+                listItem.innerHTML = "";
+                translatedTermList.appendChild(listItem)
+            }
         
         };
 
@@ -82,7 +88,7 @@ $(function() {
         
                 // add message
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hey there hozer, you have to search something!</p>";
+                listItem.innerHTML = "<p>Hey there hozer, you're going to have to search something!</p>";
                 selectedTermList.appendChild(listItem);
                 
             }
@@ -143,7 +149,7 @@ $(function() {
             translatedTermList.classList.add('active');
             translatedTermList.style.display = "block";
             const wordSet = document.querySelectorAll('.word-set');    
-            translateBox.style.color = "black";
+            // translateBox.style.color = "black";
     
             wordSet.forEach((menuitem) => {
                 menuitem.querySelector('.menuitem').onclick = () =>{
@@ -152,14 +158,14 @@ $(function() {
                     translateBox.value = selectedItem;
                     translatedTermList.classList.remove('active');
                     translatedTermList.style.display = "none";
-
-                    translateButton.onclick = () =>{
-                        searchTerm();
-                        console.log('translate')
-                    }
                 }
 
             })	
+        }
+
+        translateButton.onclick = () =>{
+            searchTerm();
+            console.log('translate')
         }
 
         body.onclick = () =>{
