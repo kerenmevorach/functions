@@ -88,6 +88,8 @@ p{
 
 #translated-term-container.active{
     /* width: 231px; */
+    position: absolute;
+    background-color: white;
     width: 60vw;
     margin-top: -12px;
     margin-left: 26px;
@@ -98,7 +100,7 @@ p{
     overflow: scroll;
     border-left: 1px var(--text-color) solid;
     border-right: 1px var(--text-color) solid;
-    border-bottom: 1px var(--text-color) solid;
+    border-bottom: 2px var(--text-color) solid;
     border-top: 1px transparent solid;
 }
 
