@@ -82,10 +82,11 @@ $(function() {
         
                 // add message
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hey there hozer, you're going to have to search something!</p>";
+                listItem.innerHTML = "<p>Hey there hozer, you have to search something!</p>";
                 selectedTermList.appendChild(listItem);
                 
-            } 
+            }
+            
             else {
                 // clear
                 selectedTermList.innerHTML = '';
@@ -121,6 +122,13 @@ $(function() {
                     }
                 
             });
+
+            if (!termFound) {
+                const listItem = document.createElement('li') 
+                listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                selectedTermList.appendChild(listItem)
+            }
+            
             };
             
         };
@@ -148,10 +156,6 @@ $(function() {
                     translateButton.onclick = () =>{
                         searchTerm();
                         console.log('translate')
-            
-                        if(selectedItem.value == ""){
-                            selectedTermList.innerHTML = ''
-                        }
                     }
                 }
 
@@ -160,7 +164,7 @@ $(function() {
 
         body.onclick = () =>{
             translatedTermList.style.display = 'none';
-            console.log('clear');
+            console.log('button');
         }
         
     });
