@@ -5,7 +5,7 @@
     --thirdhead: calc(var(--header) / 2.2);
     --body: calc(var(--header) / 3);
     --body-leading: calc(var(--header) / 2.5);
-    --button: 14px;
+    --button: 12px;
     --left-margin: 15px;
     --spacing: 135px;
     --text-color: red;
@@ -37,8 +37,10 @@ body{
 
 nav{
     position: fixed;
-    top: 40px;
-    left: calc(var(--left-margin) - 2px);
+    top: 20px;
+    left: calc(var(--left-margin) - 9px);
+    margin-left: 14px;
+    gap: 10px;
     /* background-color: purple;
     width: 350px;
     height: 40px; */
@@ -114,6 +116,38 @@ input{
     border: 1px var(--text-color) solid;
 }
 
+#maple-leaf{
+    width: 30px;
+    stroke-width: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.cls-1{
+    fill:none;
+    stroke:#fff;
+    stroke-miterlimit: 56;
+    stroke-width: 16px;
+}
+
+.big-title{
+    font-size: 28vw;
+    line-height: 28vw;
+    margin-top: 160px;
+}
+
+@media (min-width: 500px) {
+    :root{
+        --button: 18px;
+    }
+
+    .button{
+        margin: 10px;
+    }
+}
+
 @media (min-width: 700px) {
     :root{
         --header: 80px;
@@ -123,13 +157,10 @@ input{
 
     nav{
         position: fixed;
-        top: 40px;
+        /* top: 40px; */
         left: calc(var(--left-margin) - 8px);
     }
 
-    h1{
-        
-    }
 
     p{
         max-width: 42ch;
