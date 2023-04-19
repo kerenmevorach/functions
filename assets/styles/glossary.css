@@ -1,10 +1,7 @@
 :root{
     --term: 100px;
 }
-/* 
-h2{
-    font-size: var(--term);
-} */
+
 
 .bullet{
     /* background-color: red; */
@@ -46,6 +43,11 @@ h2{
 
 .word-set.active .bullet{
     background-color: var(--text-color);
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h2{
@@ -94,7 +96,7 @@ p{
 @media (min-width: 1100px) {
     :root{
         /* --header: 15s0px; */
-        --header: 170px;
+        /* --header: 170px; */
     }
 
     h3{

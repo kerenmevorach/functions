@@ -112,9 +112,9 @@ $(function() {
                     const itemDetails =
                         `
                             <h2>${item.title}</h2>
-                            <h3>Definition:</h3>
+                            <h3 class="push">Definition:</h3>
                             <p class="definition">${item.definition}</p>
-                            <h3>Americanized:</h3>
+                            <h3 class="push">Americanized:</h3>
                             <p>${item.americanized}</p>
                             <div class="line"></div>
                         `;
@@ -170,7 +170,7 @@ $(function() {
 
         body.onclick = () =>{
             translatedTermList.style.display = 'none';
-            console.log('button');
+            console.log('clear');
         }
         
     });

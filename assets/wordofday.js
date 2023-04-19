@@ -13,8 +13,9 @@ $(function() {
     $.getJSON(datafile, function(data) {
     
         term.innerHTML = data[0].title
-        americanVersion.innerHTML = data[0].americanized
         termDefinition.innerHTML = data[0].definition
+        americanVersion.innerHTML = data[0].americanized
+
 
         function getTime() {
             let h = new Date().getHours()
@@ -30,8 +31,9 @@ $(function() {
             let randomNumber = Math.floor(Math.random() * 21)
 
             term.innerHTML = data[randomNumber].title
-            americanVersion.innerHTML = data[randomNumber].americanized
             termDefinition.innerHTML = data[randomNumber].definition
+            americanVersion.innerHTML = data[randomNumber].americanized
+
         }
         
     };

@@ -15,7 +15,7 @@ const renderItems = (glossary) => {
 			`
 			 	<button class="bullet-and-term">
 				 	<div class="bullet"></div>
-					<h2 class="term">${item.title}</h2>
+					<h1 class="term">${item.title}</h1>
 				</button>
 				<aside>
 					<h3>Definition:</h3>
@@ -48,18 +48,6 @@ const renderItems = (glossary) => {
 		}
 })	
 }
-
-// imagesBlocks.forEach((block) => {
-// 	block.querySelector('figure').onclick = () =>{
-// 		block.classList.add('active')
-// 	}
-
-// 	block.querySelector('aside').onclick = () =>{
-// 		block.classList.remove('active')
-// 	}
-	
-// })
-
 
 
 // Fetch gets your JSON file…
