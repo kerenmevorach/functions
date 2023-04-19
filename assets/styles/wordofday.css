@@ -28,6 +28,18 @@ body{
     fill: white;
 }
 
+#wordofdaycontainer{
+    margin-left: 8px;
+}
+
+
+@media (min-width: 700px) {
+    #wordofdaycontainer{
+        margin-left: 16px;
+    }
+}
+
+
 @media (min-width: 1100px) {
     p{
         max-width: 43ch;

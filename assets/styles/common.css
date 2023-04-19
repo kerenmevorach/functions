@@ -4,7 +4,7 @@
     --subhead: calc(var(--header) / 1.4);
     --thirdhead: calc(var(--header) / 2.2);
     --body: calc(var(--header) / 3);
-    --body-leading: calc(var(--header) / 2.5);
+    --body-leading: calc(var(--header) / 2.4);
     --button: 12px;
     --left-margin: 15px;
     --spacing: 135px;
@@ -107,6 +107,13 @@ p{
     margin-right: 20px;
 }
 
+.description{
+    margin-top: 20px;
+    margin-left: 21px;
+    max-width: 55ch;
+}
+
+
 em{
     font-style: italic;
 }
@@ -137,9 +144,9 @@ input{
 }
 
 .big-title{
-    font-size: 28vw;
-    line-height: 28vw;
-    margin-top: 160px;
+    font-size: 100px;
+    line-height: 100px;
+    margin-top: 120px;
 }
 
 @media (min-width: 500px) {
@@ -147,16 +154,23 @@ input{
         --button: 16px;
     }
 
+    .big-title{
+        font-size: 120px;
+        line-height: 120px;
+        margin-top: 120px;
+    }
+
     .button{
         margin: 10px;
     }
-
 }
 
 @media (min-width: 700px) {
     :root{
         --header: 80px;
         --left-margin: 30px;
+        --body: calc(var(--header) / 3.6);
+        --body-leading: calc(var(--header) / 2.6);
         --button: 16px;
     }
 
@@ -177,23 +191,30 @@ input{
     .big-title{
         font-size: 190px;
         line-height: 190px;
-        margin-top: 160px;
+        margin-top: 140px;
+    }
+
+    .description{
+        margin-top: 20px;
+        margin-left: 36px;
+        max-width: 55ch;
     }
 }
 
 @media (min-width: 900px) {
-    .big-title{
+    /* .big-title{
         font-size: 260px;
         line-height: 250px;
         margin-top: 160px;
-    }
+    } */
 }
 
 @media (min-width: 1100px) {
     :root{
         --header: 90px;
-        --body: calc(var(--header) / 3.6);
-        --body-leading: calc(var(--header) / 2.6);
+        --body: 22px;
+        --body-leading: 31px;
+        
     }
 
     p{
