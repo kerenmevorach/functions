@@ -1,5 +1,5 @@
 :root{
-    --header: 44px;
+    --header: 40px;
     --header-leading: calc(var(--header) + 8px);
     --subhead: calc(var(--header) / 1.4);
     --thirdhead: calc(var(--header) / 2.2);
