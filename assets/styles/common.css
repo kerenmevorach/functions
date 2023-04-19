@@ -126,10 +126,14 @@ input{
 }
 
 .cls-1{
-    fill:none;
-    stroke:#fff;
+    fill: none;
+    stroke: white;
     stroke-miterlimit: 56;
     stroke-width: 16px;
+}
+
+.fill{
+    fill: white;
 }
 
 .big-title{
@@ -140,12 +144,13 @@ input{
 
 @media (min-width: 500px) {
     :root{
-        --button: 18px;
+        --button: 16px;
     }
 
     .button{
         margin: 10px;
     }
+
 }
 
 @media (min-width: 700px) {
@@ -158,12 +163,29 @@ input{
     nav{
         position: fixed;
         /* top: 40px; */
-        left: calc(var(--left-margin) - 8px);
+        left: calc(var(--left-margin) - 2px);
     }
-
 
     p{
         max-width: 42ch;
+    }
+
+    #maple-leaf{
+        margin-right: 10px;
+    }
+
+    .big-title{
+        font-size: 190px;
+        line-height: 190px;
+        margin-top: 160px;
+    }
+}
+
+@media (min-width: 900px) {
+    .big-title{
+        font-size: 260px;
+        line-height: 250px;
+        margin-top: 160px;
     }
 }
 
