@@ -1,5 +1,5 @@
 :root{
-    --header: 52px;
+    --header: 44px;
     --header-leading: calc(var(--header) + 8px);
     --subhead: calc(var(--header) / 1.4);
     --thirdhead: calc(var(--header) / 2.2);
@@ -127,7 +127,7 @@ input{
 
 .cls-1{
     fill: none;
-    stroke: white;
+    stroke: red;
     stroke-miterlimit: 56;
     stroke-width: 16px;
 }

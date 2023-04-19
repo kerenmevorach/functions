@@ -8,6 +8,26 @@ body{
     color: white;
 }
 
+#maple-leaf{
+    width: 30px;
+    stroke-width: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.cls-1{
+    fill: none;
+    stroke: white;
+    stroke-miterlimit: 56;
+    stroke-width: 16px;
+}
+
+.fill{
+    fill: white;
+}
+
 @media (min-width: 1100px) {
     p{
         max-width: 43ch;
