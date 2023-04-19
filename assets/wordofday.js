@@ -9,15 +9,12 @@ let itemDetails;
 
 $(function() { 
 
-    //get file  
     $.getJSON(datafile, function(data) {
     
-        term.innerHTML = data[0].title
-        termDefinition.innerHTML = data[0].definition
-        americanVersion.innerHTML = data[0].americanized
-
+        setWordofDay(data);
 
         function getTime() {
+            let now = new Date();
             let h = new Date().getHours()
             let m = new Date().getMinutes()
             let s = new Date().getSeconds()
@@ -25,21 +22,24 @@ $(function() {
             let time = h + ":" + m;
             console.log(time)
 
-        if (h == 0 && m == 0 && s == 0) {
-            console.log('its time!')
+            if (h === 0 && m === 0 && s === 0 ){
+                console.log('it is time!')
+                setWordofDay(data);
+            }
 
-            let randomNumber = Math.floor(Math.random() * 21)
+        };
 
-            term.innerHTML = data[randomNumber].title
-            termDefinition.innerHTML = data[randomNumber].definition
-            americanVersion.innerHTML = data[randomNumber].americanized
-
-        }
-        
-    };
-
-    setInterval(getTime, 1000)
+        setInterval(getTime, 60000)
                 
     });
     
 });
+
+function setWordofDay(data) {
+
+    let randomNumber = Math.floor(Math.random() * data.length);
+
+    term.innerHTML = data[randomNumber].title;
+    termDefinition.innerHTML = data[randomNumber].definition;
+    americanVersion.innerHTML = data[randomNumber].americanized;
+}
