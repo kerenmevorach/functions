@@ -49,6 +49,7 @@ $(function() {
             
                     //add the item details to the list item
                     listItem.innerHTML = itemDetails;
+                    
                     //add this cute little class
                     listItem.classList.add('word-set');
 
@@ -56,14 +57,9 @@ $(function() {
                     translatedTermList.appendChild(listItem)
                     }
 
-                    //if term isn't in the list, don't show anything
-                    if (!termFound) {
-                        const listItem = document.createElement('li') 
-                        listItem.innerHTML = "";
-                        translatedTermList.appendChild(listItem)
-                    }
             });
 
+            //if term isn't in the list, don't show anything in the dropdown
             if (!termFound) {
                 const listItem = document.createElement('li') 
                 listItem.innerHTML = "";
@@ -75,60 +71,62 @@ $(function() {
         function searchTerm() {
 
             //clear any previous searches
-            selectedTermList.innerHTML = ''
+            selectedTermList.innerHTML = ""
     
             //get term value, make it lowercase
             let termToTranslate = document.querySelector('#term-to-translate').value.toString().toLowerCase();
             
             console.log(termToTranslate);
 
+            //make sure the text input is minimum 3 characters
             if (termToTranslate == "" || termToTranslate.length < 3) {
+
                 // clear
                 selectedTermList.innerHTML = '';
         
-                // add message
+                // add message to tell people to SEARCH
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hey there hozer, you're going to have to search something!</p>";
-                selectedTermList.appendChild(listItem);
-                
+                listItem.innerHTML = "<p>Hey there hozer, you're going to have to search for something!</p>";
+                selectedTermList.appendChild(listItem);  
             }
             
             else {
                 // clear
-                selectedTermList.innerHTML = '';
+                selectedTermList.innerHTML = "";
         
                 let termFound = false;
 
-            data.forEach((item) => {
+                data.forEach((item) => {
 
-                if (item.tags.includes(termToTranslate)) {
+                    if (item.tags.includes(termToTranslate)) {
 
-                    termFound = true;
-    
-                    // Make the `li`
-                    const listItem = document.createElement('li') 
+                        termFound = true;
+        
+                        // Make the `li`
+                        const listItem = document.createElement('li') 
 
-                    //Create the item details
-                    const itemDetails =
-                        `
-                            <h2>${item.title}</h2>
-                            <h3 class="push">Definition:</h3>
-                            <p class="definition">${item.definition}</p>
-                            <h3 class="push">Americanized:</h3>
-                            <p>${item.americanized}</p>
-                            <div class="line"></div>
-                        `;
-            
-                    //add the item details to the list item
-                    listItem.innerHTML = itemDetails;
-                    listItem.classList.add('word-set');
+                        //Create the item details
+                        const itemDetails =
+                            `
+                                <h2>${item.title}</h2>
+                                <h3 class="push">Definition:</h3>
+                                <p class="definition">${item.definition}</p>
+                                <h3 class="push">Americanized:</h3>
+                                <p>${item.americanized}</p>
+                                <div class="line"></div>
+                            `;
+                
+                        //add the item details to the list item
+                        listItem.innerHTML = itemDetails;
+                        listItem.classList.add('word-set');
 
-                    //Add the list item to the selected terms list
-                    selectedTermList.appendChild(listItem) 
-                    }
+                        //Add the list item to the selected terms list
+                        selectedTermList.appendChild(listItem) 
+                        }
                 
             });
 
+            //if the term isn't found 
             if (!termFound) {
                 const listItem = document.createElement('li') 
                 listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
@@ -144,13 +142,14 @@ $(function() {
         let translateBox = document.querySelector('#term-to-translate')
         
         translateBox.oninput = () =>{
+            //get the term as the user is typing
             getTerm();
             console.log('translate');
             translatedTermList.classList.add('active');
             translatedTermList.style.display = "block";
             const wordSet = document.querySelectorAll('.word-set');    
-            // translateBox.style.color = "black";
     
+            //take item from dropdown to populate the textbox
             wordSet.forEach((menuitem) => {
                 menuitem.querySelector('.menuitem').onclick = () =>{
                     console.log(menuitem);
@@ -165,7 +164,7 @@ $(function() {
 
         translateButton.onclick = () =>{
             searchTerm();
-            console.log('translate')
+            console.log('search')
         }
 
         body.onclick = () =>{

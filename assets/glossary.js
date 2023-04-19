@@ -26,7 +26,6 @@ const renderItems = (glossary) => {
 				<div class="line"></div>
 			`
 
-		// listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 		listItem.innerHTML = itemDetails;
 		listItem.classList.add('word-set');
 
@@ -34,16 +33,12 @@ const renderItems = (glossary) => {
 	})
 
 	const wordSet = document.querySelectorAll('.word-set');
-	// const aside = document.querySelector('aside');
-	// const bullet = document.querySelector('.bullet');
-	// const bulletTerm = document.querySelector('.bullet-and-term');
+
 
 
 	wordSet.forEach((bulletTerm) => {
 		bulletTerm.querySelector('.bullet-and-term').onclick = () =>{
-		// bulletTerm.onclick = () =>{
 			console.log('hi')
-			//why does it add the class to the parent (word-set)? 
 			bulletTerm.classList.toggle('active')
 		}
 })	
@@ -55,6 +50,6 @@ fetch('assets/glossary.json')
 	.then(response => response.json())
 	.then(glossary => {
 		// And passes the data to the function, above!
-		renderItems(glossary) // In order
+		renderItems(glossary) 
 	})
 

@@ -46,11 +46,6 @@ nav{
     height: 40px; */
 }
 
-button:hover{
-    cursor: pointer;
-    opacity: 0.7; 
-}
-
 .button{
     font-family: 'Authentic Sans';
     font-weight: 200;
@@ -65,8 +60,12 @@ button:hover{
     border-radius: 25px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .button:hover{
-    opacity: 0.7;
+    cursor: pointer;
 }
 
 .selected{
@@ -150,6 +149,15 @@ input{
 }
 
 @media (min-width: 500px) {
+
+    button:hover{
+        opacity: 0.7; 
+    }
+    
+    .button:hover{
+        opacity: 0.7;
+    }
+
     :root{
         --button: 16px;
     }

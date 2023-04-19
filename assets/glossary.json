@@ -122,8 +122,14 @@
 	{
 		"title": "Ketchup Chips",
 		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America, SORRY!",
-		"definition": " Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
+		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
 		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
+	},
+	{
+		"title": "Zee",
+		"americanized" : "Zed",
+		"definition": "The final letter of the English alphabet.",
+		"tags": "['alphabet', 'zee', 'zed']"
 	}
 	
 ]
