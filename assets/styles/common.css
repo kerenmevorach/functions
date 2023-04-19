@@ -127,6 +127,10 @@ input{
         left: calc(var(--left-margin) - 8px);
     }
 
+    h1{
+        
+    }
+
     p{
         max-width: 42ch;
     }
