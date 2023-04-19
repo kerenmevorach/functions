@@ -1,5 +1,5 @@
 form{
-    margin-left: calc(var(--left-margin) + 10px);
+    margin-left: calc(var(--left-margin) + 4px);
     margin-top: calc(var(--spacing) - 158px);
 }
 
@@ -20,19 +20,9 @@ form{
     display: none;
 }
 
-#term-to-translate{
-    font-family: 'Authentic Sans';
-    font-size: var(--body);
-    color: rgb(146, 146, 146);
-    width: 69vw;
-    height: 40px;
-    padding: 20px;
-    padding-left: 17px;
-    position: relative;
-}
-
 #selected-term-container{
-    margin-top: 20px;
+    margin-top: -20px;
+    margin-left: 0px;
 }
 
 .translate-button{
@@ -88,21 +78,30 @@ p{
 }
 
 #translated-term-container.active{
-    /* width: 231px; */
     position: absolute;
     background-color: white;
-    width: 67vw;
-    margin-top: -22px;
-    margin-left: 17px;
+    width: 235px;
+    margin-top: -11px;
+    margin-left: 19px;
     padding-bottom: -100px;
-    /* height: 326px; */
     height: auto;
     max-height: 345px;
     overflow: scroll;
-    border-left: 1px var(--text-color) solid;
-    border-right: 1px var(--text-color) solid;
-    border-bottom: 1px var(--text-color) solid;
+    border-left: 2px var(--text-color) solid;
+    border-right: 2px var(--text-color) solid;
+    border-bottom: 2px var(--text-color) solid;
     border-top: 1px var(--text-color) solid;
+}
+
+#term-to-translate{
+    font-family: 'Authentic Sans';
+    font-size: var(--body);
+    color: rgb(146, 146, 146);
+    width: 235px;
+    height: 40px;
+    padding: 20px;
+    padding-left: 17px;
+    position: relative;
 }
 
 .menuitem{
@@ -122,11 +121,6 @@ p{
     color: white;
 }
 
-@media (min-width: 439px) {
-    #term-to-translate, #translated-term-container.active{
-        width: 315px;
-    }
-}
 
 @media (min-width: 500px) {
     .translate-button{
@@ -134,9 +128,19 @@ p{
         left: -10px;
     }
 
+    #translated-term-container.active{
+        margin-top: -21px;
+    }
+
 }
 
 @media (min-width: 576px) {
+
+    /* #term-to-translate{
+        border-bottom: 2px var(--text-color) solid;
+        border-top: 2px var(--text-color) solid;
+        border-left: 2px var(--text-color) solid;
+    } */
     
     #term-to-translate, #translated-term-container.active{
         width: 439px;
@@ -146,19 +150,24 @@ p{
 
 @media (min-width: 700px) {
 
+    form{
+        margin-left: calc(var(--left-margin) + 10px);
+    }
+
     h3{
         margin-top: 22px;
     }
-    .translator-label.active{
+    /* .translator-label.active{
         max-width: 20ch;
-    }
+        width: 520px;
+    } */
 
     #translated-term-container.active{
         max-height: 385px;
         margin-top: -21px;
         padding-bottom: -100px;
         width: 520px;
-        margin-left: 32px;
+        margin-left: 40px;
     }
 
     .translate-button{
@@ -176,6 +185,12 @@ p{
         padding-left: 16px;
     }
 
+    #selected-term-container{
+        margin-top: -20px;
+        margin-left: 8px;
+    }
+    
+
     h2{
         margin-left: calc(var(--left-margin));
     }
@@ -184,6 +199,7 @@ p{
     p{
         margin-left: calc(var(--left-margin));
     }
+    
     
     .menuitem{
         margin-left: -16px;

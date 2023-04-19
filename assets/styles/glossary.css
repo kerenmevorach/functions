@@ -22,7 +22,7 @@
 
 #glossary-container{
     margin-top: calc(var(--spacing) - 15px);
-    margin-left: calc(var(--left-margin) - 12px);
+    margin-left: calc(var(--left-margin) - 22px);
 }
 
 .line{
@@ -39,6 +39,7 @@
 
 .word-set.active aside{
     display: block;
+    margin-left: 12px;
 }
 
 .word-set.active .bullet{
@@ -72,7 +73,7 @@ p{
     }
 
     .line{
-        width: 101%;
+        width: 102%;
         background-color: var(--text-color);
         margin-top: 12px;
         margin-left: -14px;;
