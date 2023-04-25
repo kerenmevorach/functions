@@ -32,13 +32,13 @@
     {
 		"title": "Clicks",
 		"americanized" : "Kilometres.",
-		"definition": "Kilometres",
+		"definition": "Kilometres.",
 		"tags": "['clicks', 'click', 'kilometres', 'km']"
 	},
 	{
 		"title": "Cue Cards",
 		"americanized" : "Index Cards, or Note&nbsp;Cards.",
-		"definition": "A card held beside a camera for a television broadcaster to read from while appearing to look into the camera. This term is also used to describe ssmall cards on which information is&nbsp;recorded.",
+		"definition": "A card held beside a camera for a television broadcaster to read from while appearing to look into the camera. This term is also used to describe small cards on which information is&nbsp;recorded.",
 		"tags": "['cue cards', 'cue', 'index cards', 'index', 'note cards']"
 	},
     {
@@ -109,7 +109,7 @@
 	},
 	{
 		"title": "Harvey’s",
-		"americanized" : "",
+		"americanized" : "Nothing quite like it in America,&nbsp;SORRY!",
 		"definition": "Harvey’s is a fast food restaurant chain operating in Canada, with locations in every province except British&nbsp;Columbia.",
 		"tags": "['harvery's', 'harvery’s', 'harverys', 'food', 'fast food', 'harvs']"
 	},
@@ -139,7 +139,7 @@
 	},
 	{
 		"title": "Loonie",
-		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America,&nbsp;SORRY!",
+		"americanized" : "Nothing quite like it in America,&nbsp;SORRY!",
 		"definition": "A Canadian one-dollar coin, which has a loon on it.",
 		"tags": "['dollar', 'one', 'loonie', 'money', 'dollars']"
 	},
@@ -153,11 +153,11 @@
 		"title": "Much Music",
 		"americanized": "MTV.",
 		"definition": "A Canadian music channel focused on music programming, including blocks of music videos and original series focusing on Canadian&nbsp;musicians.",
-		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
+		"tags": "['music', 'much music', 'mtv']"
 	},
 	{
 		"title": "Nanaimo Bars",
-		"americanized": "There’s nothing quite like it in America!",
+		"americanized": "Nothing quite like it in America,&nbsp;SORRY!",
 		"definition": "A dessert named after the Canadian city of Nanaimo in British Columbia. It consists of three layers: a wafer, nut, and coconut crumb base; custard icing in the middle; and a layer of chocolate ganache on&nbsp;top.",
 		"tags": "['nanaimo bars', 'nanaimo', 'bars', 'food', 'dessert']"
 	},
@@ -176,7 +176,7 @@
 	{
 		"title": "Poutine",
 		"americanized" : "Disco Fries.",
-		"definition": "A dish of french fries and cheese curds topped with a brown gravy. It emerged in Quebec, in the late 1950s in the Centre-du-Québec region, though its exact origins arenbsp;uncertain.",
+		"definition": "A dish of French fries and cheese curds topped with a brown gravy. It emerged in Quebec, in the late 1950s in the Centre-du-Québec region, though its exact origins arenbsp;uncertain.",
 		"tags": "['poutine', 'fries', 'food', 'disco fries']"
 	},
 	{
@@ -229,7 +229,7 @@
 	},
 	{
 		"title": "Toonie",
-		"americanized": "",
+		"americanized": "Nothing quite like it in America,&nbsp;SORRY!",
 		"definition": "A Canadian two-dollar coin, which has a polar bear on&nbsp;it.",
 		"tags": "['dollar', 'two', 'toonie', 'money', 'dollars']"
 	},
