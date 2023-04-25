@@ -11,6 +11,8 @@ $(function() {
 
         function wordOfTheDay() {
 
+            console.log(data[2].title)
+
             let day = new Date().getDate() - 1; 
 
             if (day < data.length){
@@ -20,7 +22,9 @@ $(function() {
             }
 
             else if (day > data.length){
-                day = 0
+                counter = 0
+                counter++
+                day = 0 + counter
                 term.innerHTML = data[day].title;
                 termDefinition.innerHTML = data[day].definition;
                 americanVersion.innerHTML = data[day].americanized;
