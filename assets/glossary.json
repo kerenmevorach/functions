@@ -118,42 +118,6 @@
 		"americanized" : "Electric",
 		"definition": "",
 		"tags": "['hydro', 'electric']"
-	},
-	{
-		"title": "Jos Louis",
-		"americanized" : "",
-		"definition": "",
-		"tags": "['jos louis', 'chocolate', 'candy']"
-	},
-	{
-		"title": "Keener",
-		"americanized" : "Try-hard",
-		"definition": "Someone who’s over-eager; a suck-up; a try-hard; a brown-noser. You’re such a keener for trying to learn Canadian slang and terminology",
-		"tags": "['keener', 'try hard', 'try-hard', 'eager']"
-	},
-	{
-		"title": "Ketchup Chips",
-		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America, SORRY!",
-		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
-		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
-	},
-	{
-		"title": "Much Music",
-		"americanized": "MTV",
-		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
-		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
-	},
-	{
-		"title": "Poutine",
-		"americanized" : "",
-		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
-		"tags": "['poutine', 'fries', 'food', 'disco fries']"
-	},
-	{
-		"title": "Zee",
-		"americanized" : "Zed",
-		"definition": "The final letter of the English alphabet.",
-		"tags": "['alphabet', 'zee', 'zed']"
 	}
 	
 ]
