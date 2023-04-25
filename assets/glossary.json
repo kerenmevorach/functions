@@ -2,157 +2,259 @@
 	{
 		"title": "All Dressed Chips",
 		"americanized" : "Ridgies chips has their own version of all dressed chips. They're alright, but you'll have to visit Canada for the real&nbsp;deal.",
-		"definition": "Only the best chip flavour on the planet. The flavour is a combination of ketchup, barbecue sauce, sour cream & onion, and salt & vinegar. What more could you want. ",
+		"definition": "Only the best chip flavour on the planet. The flavour is a combination of ketchup, barbecue sauce, sour cream & onion, and salt & vinegar. What more could you&nbsp;want.",
 		"tags": "['chips', 'all dressed chips', 'food', 'all dressed', 'alldressed']"
 	},
 	{
 		"title": "Bagged Milk",
-		"americanized" : "Carton of Milk",
-		"definition": "Bagged milk is exactly what it sounds like. A plastic bag that contains milk. One of the corners is cut out to allow the milk to pour out. The bag is typically stored in a pitcher or jug. YUM.",
+		"americanized" : "Carton of Milk.",
+		"definition": "Bagged milk is exactly what it sounds like. A plastic bag that contains milk. One of the corners is cut out to allow the milk to pour out. The bag is typically stored in a pitcher or jug.&nbsp;YUM.",
 		"tags": "['bagged milk', 'bag milk', 'milk', 'beverage']"
 	},
 	{
 		"title": "BeaverTail",
-		"americanized" : "Elephant Ear",
+		"americanized" : "Elephant Ear.",
 		"definition": "Fried dough pastries, stretched to resemble the shape of a beaver's tail, with various toppings added on top. If you don't get Nutella on top, then what are you doing? Unless you're allergic to nuts, then go for The&nbsp;Classic.",
 		"tags": "['beavertail', 'beaver tail', 'beaver', 'tail', 'food']"
 	},
     {
 		"title": "Butter Tart",
-		"americanized" : "The closest equivalent would be pecan pie.",
-		"definition": "A very popular dessert in Canada. The sweet tart consists of a filling of butter, sugar, syrup, and egg, baked in a pastry shell until the filling is semi-solid with a crunchy top. Don't sleep on butter tarts. ",
+		"americanized" : "The closest equivalent would be pecan&nbsp;pie.",
+		"definition": "A very popular dessert in Canada. The sweet tart consists of a filling of butter, sugar, syrup, and egg, baked in a pastry shell until the filling is semi-solid with a crunchy top. Don't sleep on butter&nbsp;tarts.",
 		"tags": "['butter tart', 'buttertart', 'butter', 'tart']"
 	},
     {
 		"title": "Chirp",
-		"americanized" : "To tease",
-		"definition": "To make fun of someone. You should be chirped if you don't know what chirp means.",
+		"americanized" : "To tease.",
+		"definition": "To make fun of someone. You should be chirped if you don't know what chirp&nbsp;means.",
 		"tags": "['chirp', 'chirps', 'chirping', 'make fun', 'make fun of']"
 	},
     {
 		"title": "Clicks",
-		"americanized" : "Kilometres",
+		"americanized" : "Kilometres.",
 		"definition": "Kilometres",
 		"tags": "['clicks', 'click', 'kilometres', 'km']"
 	},
 	{
 		"title": "Cue Cards",
-		"americanized" : "Index Cards, or Note Cards",
-		"definition": "",
+		"americanized" : "Index Cards, or Note&nbsp;Cards.",
+		"definition": "A card held beside a camera for a television broadcaster to read from while appearing to look into the camera. This term is also used to describe ssmall cards on which information is&nbsp;recorded.",
 		"tags": "['cue cards', 'cue', 'index cards', 'index', 'note cards']"
 	},
     {
 		"title": "Coffee Crisp",
-		"americanized" : "They don't exist in the United States HAHAHA you'll have to visit Canada.",
+		"americanized" : "They don't exist in the United States HAHA you'll have to visit Canada.",
 		"definition": "A Canadian chocolate bar consisting of alternating layers of vanilla wafer and a foamed coffee-flavoured soft candy, covered with a milk chocolate outer layer. ",
 		"tags": "['coffee crisp', 'chocolate', 'candy', 'coffee', 'crisp']"
 	},
     {
 		"title": "Cutlery",
-		"americanized" : "Silverware",
+		"americanized" : "Silverware.",
 		"definition": "Knives, forks, and spoons used for eating or serving food.",
 		"tags": "['cutlery', 'silverware', 'utensils']"
 	},
     {
 		"title": "Dart",
-		"americanized" : "Cigarette",
-		"definition": "A cigarette. Common phrases include: <em>hack a dart</em> and <em>hacking a dart</em>",
+		"americanized" : "Cigarette.",
+		"definition": "A cigarette. Common phrases include: <em>hack a dart</em> and <em>hacking a&nbsp;dart</em>.",
 		"tags": "['dart', 'darts', 'cig', 'cigarette', 'cigarettes']"
 	},
 	{
 		"title": "Dep",
-		"americanized" : "Corner Store",
-		"definition": "Short for dépanneur, the term for a convenience store in the French-speaking province Quebec.",
+		"americanized" : "Corner Store.",
+		"definition": "Short for dépanneur, the term for a convenience store in the French-speaking province&nbsp;Quebec.",
 		"tags": "['dep', 'corner store', 'dépanneur', 'depanneur', 'store']"
 	},
 	{
 		"title": "Double Double",
 		"americanized" : "A coffee with 2 creams and 2 sugars.",
-		"definition": "A common way for a Canadian to order their coffee — double cream, double sugar. Typically from Tim Hortons ♥",
+		"definition": "A common way for a Canadian to order their coffee — double cream, double sugar. Typically from Tim&nbsp;Hortons ♥",
 		"tags": "['double double', 'double', 'drink', 'coffee', 'cream', 'sugar']"
 	},
 	{
 		"title": "Eh",
 		"americanized" : "Right?",
-		"definition": "On its own or added to the end of a sentence, it can mean ‘right?’, or ‘what?’ It can also be added to most sentences just for a good time.",
+		"definition": "On its own or added to the end of a sentence, it can mean ‘right?’, or ‘what?’ It can also be added to most sentences just for a good&nbsp;time.",
 		"tags": "['eh', 'eh?', 'right', 'right?']"
 	},
 	{
 		"title": "Freezie",
-		"americanized" : "Ice Pop",
-		"definition": "A nostalgic summertime treat consisting of ice, sugar, and food-coloring that comes in a clear plastic tube. Red is the best flavor. End of discussion.",
+		"americanized" : "Ice Pop.",
+		"definition": "A nostalgic summertime treat consisting of ice, sugar, and food-coloring that comes in a clear plastic tube. Red is the best flavor. End of&nbsp;discussion.",
 		"tags": "['freezie', 'ice pop', 'icepop', 'food']"
 	},
 	{
 		"title": "Garburator",
-		"americanized": "Garbage Disposal",
-		"definition": "An electric device underneath of a kitchen sink that breaks up food so it can be washed away.",
+		"americanized": "Garbage Disposal.",
+		"definition": "An electric device underneath of a kitchen sink that breaks up food so it can be washed&nbsp;away.",
 		"tags": "['garburator', 'garbarator', 'garbage disposal']"
 	},
 	{
 		"title": "GTs",
-		"americanized" : "Good Times",
-		"definition": "GTs is short for good times, not gin & tonics",
+		"americanized" : "Good Times.",
+		"definition": "GTs is short for good times, not gin &&nbsp;tonics.",
 		"tags": "['GTs', 'gts', 'good times']"
 	},
 	{
 		"title": "Hang a Larry",
-		"americanized" : "Make a left",
-		"definition": "Make a left",
+		"americanized" : "Make a left.",
+		"definition": "Make a left.",
 		"tags": "['hang a larry', 'larry', 'left', 'make a left', 'turn left']"
 	},
 	{
 		"title": "Hang a Roger",
-		"americanized" : "Make a right",
-		"definition": "Make a right",
+		"americanized" : "Make a right.",
+		"definition": "Make a right.",
 		"tags": "['hang a roger', 'roger', 'right', 'make a right', 'turn right']"
 	},
 	{
 		"title": "Harvey’s",
 		"americanized" : "",
-		"definition": "Harvey's is a fast food restaurant chain operating in Canada, with locations in every province except British Columbia.",
+		"definition": "Harvey’s is a fast food restaurant chain operating in Canada, with locations in every province except British&nbsp;Columbia.",
 		"tags": "['harvery's', 'harvery’s', 'harverys', 'food', 'fast food', 'harvs']"
 	},
 	{
-		"title": "Hydro",
-		"americanized" : "Electric",
-		"definition": "",
+		"title": "Hydro Bill",
+		"americanized" : "Electric Bill.",
+		"definition": "A monthly electric bill showing how much electricity you use per month and your electric&nbsp;rate.",
 		"tags": "['hydro', 'electric']"
 	},
 	{
 		"title": "Jos Louis",
 		"americanized" : "",
-		"definition": "",
-		"tags": "['jos louis', 'chocolate', 'candy']"
+		"definition": "A Canadian confection consisting of two chocolate cake rounds with a cream filling within a milk chocolate&nbsp;shell.",
+		"tags": "['jos louis', 'chocolate', 'food', 'dessert', 'louis']"
 	},
 	{
 		"title": "Keener",
-		"americanized" : "Try-hard",
-		"definition": "Someone who’s over-eager; a suck-up; a try-hard; a brown-noser. You’re such a keener for trying to learn Canadian slang and terminology",
+		"americanized" : "Try-hard.",
+		"definition": "Someone who’s over-eager; a suck-up; a try-hard; a brown-noser. You’re such a keener for trying to learn Canadian slang and&nbsp;terminology.",
 		"tags": "['keener', 'try hard', 'try-hard', 'eager']"
 	},
 	{
 		"title": "Ketchup Chips",
-		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America, SORRY!",
+		"americanized" : "Ketchup flavoured chips. Nothing quite like it in America,&nbsp;SORRY!",
 		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
 		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
 	},
 	{
+		"title": "Loonie",
+		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America,&nbsp;SORRY!",
+		"definition": "A Canadian one-dollar coin, which has a loon on it.",
+		"tags": "['dollar', 'one', 'loonie', 'money', 'dollars']"
+	},
+	{
+		"title": "Mickey",
+		"americanized": "A small bottle of alcohol (375mL or&nbsp;13oz).",
+		"definition": "A small bottle of alcohol (375mL or&nbsp;13oz).",
+		"tags": "['small', 'alcohol', 'liquor', 'mickey']"
+	},
+	{
 		"title": "Much Music",
-		"americanized": "MTV",
-		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
+		"americanized": "MTV.",
+		"definition": "A Canadian music channel focused on music programming, including blocks of music videos and original series focusing on Canadian&nbsp;musicians.",
 		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
+	},
+	{
+		"title": "Nanaimo Bars",
+		"americanized": "There’s nothing quite like it in America!",
+		"definition": "A dessert named after the Canadian city of Nanaimo in British Columbia. It consists of three layers: a wafer, nut, and coconut crumb base; custard icing in the middle; and a layer of chocolate ganache on&nbsp;top.",
+		"tags": "['nanaimo bars', 'nanaimo', 'bars', 'food', 'dessert']"
+	},
+	{
+		"title": "Pencil Crayons",
+		"americanized": "Colored Pencils.",
+		"definition": "An art medium constructed of a narrow, pigmented core encased in a wooden cylindricalnbsp;case.",
+		"tags": "['art', 'drawing', 'pencil crayons', 'crayons', 'pencil', 'colored pencils']"
+	},
+	{
+		"title": "Pop",
+		"americanized": "Soda.",
+		"definition": "A drink that usually contains water, a sweetener, and a natural and/or artificial flavoring. My favourite isnbsp;Coke.",
+		"tags": "['pop', 'soda', 'drink']"
 	},
 	{
 		"title": "Poutine",
 		"americanized" : "Disco Fries.",
-		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
+		"definition": "A dish of french fries and cheese curds topped with a brown gravy. It emerged in Quebec, in the late 1950s in the Centre-du-Québec region, though its exact origins arenbsp;uncertain.",
 		"tags": "['poutine', 'fries', 'food', 'disco fries']"
 	},
 	{
-		"title": "Zee",
-		"americanized" : "Zed",
-		"definition": "The final letter of the English alphabet.",
+		"title": "Predrink",
+		"americanized" : "Pregame.",
+		"definition": "A predrink, or a pre, is when people have drinks, usually alcoholic, before going&nbsp;out.",
+		"tags": "['predrink', 'pre', 'pregame', 'alcohol']"
+	},
+	{
+		"title": "Rockets",
+		"americanized" : "Smarties",
+		"definition": "A tablet-like candy coming in a roll that is filled with sweet and fruity flavours like Orange Cream, Pineapple, Cherry, Strawberry and&nbsp;Orange.",
+		"tags": "['candy', 'rockets', 'smarties', 'food']"
+	},
+	{
+		"title": "Running Shoes",
+		"americanized" : "Sneakers.",
+		"definition": "Shoes primarily designed for sports or other forms of physical exercise, but which are also widely used for everyday casual&nbsp;wear.",
+		"tags": "['shoes', 'runners', 'sneakers', 'running']"
+	},
+	{
+		"title": "Smarties",
+		"americanized" : "M&Ms.",
+		"definition": "Candy coated pieces of chocolate. Similar to M&Ms, but also&nbsp;not.",
+		"tags": "['candy', 'chocolate', 'smarties', 'm and ms', 'mandms']"
+	},
+	{
+		"title": "Soccer Baseball",
+		"americanized" : "Kickball.",
+		"definition": "Soccer baseball is a popular schoolyard game that pulls the best elements from two of the world’s most engaging sports. The objective of the game, like baseball, is to score more runs than the other teams by crossing the plate after kicking the ball into&nbsp;play.",
+		"tags": "['kickball', 'ball', 'sports', 'soccer', 'baseball']"
+	},
+	{
+		"title": "Timbits",
+		"americanized" : "Donut Holes, or Dunkin’ MUNCHKINS.",
+		"definition": "Timbits are what Tim Hortons calls 'donut holes', or mini spherical&nbsp;donuts.",
+		"tags": "['timbits', 'donuts', 'munchkins']"
+	},
+	{
+		"title": "Tim Hortons",
+		"americanized" : "Donut Holes, or Dunkin’ MUNCHKINS.",
+		"definition": "Tim Hortons, also known as Timmie’s or Tim’s, is a Canadian coffeehouse and restaurant chain. Tim Hortons serves coffee, doughnuts, and other fast-food items. My personal favourite item is the Iced&nbsp;Capp.",
+		"tags": "['tims', 'tim’s', 'timmie’s', 'timmies', 'tim hortons', 'tim horton's', 'coffee']"
+	},
+	{
+		"title": "Toboggan",
+		"americanized": "Sled.",
+		"definition": "A simple sled traditionally used by&nbsp;children.",
+		"tags": "['toboggan', 'sled']"
+	},
+	{
+		"title": "Toonie",
+		"americanized": "",
+		"definition": "A Canadian two-dollar coin, which has a polar bear on&nbsp;it.",
+		"tags": "['dollar', 'two', 'toonie', 'money', 'dollars']"
+	},
+	{
+		"title": "Toque",
+		"americanized": "Beanie.",
+		"definition": "A winter hat or&nbsp;beanie.",
+		"tags": "['toboggan', 'sled']"
+	},
+	{
+		"title": "Two-Four",
+		"americanized": "A case of 24&nbsp;beers.",
+		"definition": "A case of 24&nbsp;beers.",
+		"tags": "['beer', 'two-four', 'twofour, 'beers']"
+	},
+	{
+		"title": "Washroom",
+		"americanized": "Bathroom.",
+		"definition": "No, not a laundry room. A bathroom, as in a place where people ~do&nbsp;their&nbsp;business~.",
+		"tags": "['washroom', 'bathroom']"
+	},
+	{
+		"title": "Zed",
+		"americanized" : "Zee.",
+		"definition": "Zed is the pronunciation of the letter Z in Commonwealth&nbsp;English.",
 		"tags": "['alphabet', 'zee', 'zed']"
 	}	
 ]
