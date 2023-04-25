@@ -41,7 +41,7 @@ $(function() {
             americanVersion.innerHTML = data[wordIndex].americanized;
         }
 
-        setInterval(wordOfTheDay, 1000);
+        setInterval(wordOfTheDay, 500);
     
     });
 
