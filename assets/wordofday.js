@@ -19,11 +19,9 @@ $(function() {
             // let arrayLength = data.length;
             // let currentIndex = 24;
             // let nextIndex = (currentIndex + 1) % arrayLength;
-
-            // console.log(today)
-            // console.log(data.length);
             // console.log(nextIndex);
 
+            //for testing
             // let minute = new Date().getSeconds() - 1;
             // let wordIndex = Math.abs(minute % data.length);
      
@@ -31,8 +29,11 @@ $(function() {
             //getting the day and subtracting one, since the array starts from 0
             let today = new Date().getDate() - 1;
             //using modulo operator - ensures we are staying within the array
-            //once the wordIndex is larger than the length of the data, the wordIndex will go back to 0
+            //today is the dividend, data.length is the divisor
+            //if you divide today by data.length, what is the remainder
             let wordIndex = today % data.length;
+            console.log(today)
+            console.log(data.length)
             console.log(wordIndex)
 
 
