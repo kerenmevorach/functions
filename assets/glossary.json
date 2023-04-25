@@ -35,6 +35,12 @@
 		"definition": "Kilometres",
 		"tags": "['clicks', 'click', 'kilometres', 'km']"
 	},
+	{
+		"title": "Cue Cards",
+		"americanized" : "Index Cards, or Note Cards",
+		"definition": "",
+		"tags": "['cue cards', 'cue', 'index cards', 'index', 'note cards']"
+	},
     {
 		"title": "Coffee Crisp",
 		"americanized" : "They don't exist in the United States HAHAHA you'll have to visit Canada.",
@@ -44,7 +50,7 @@
     {
 		"title": "Cutlery",
 		"americanized" : "Silverware",
-		"definition": "",
+		"definition": "Knives, forks, and spoons used for eating or serving food.",
 		"tags": "['cutlery', 'silverware', 'utensils']"
 	},
     {
@@ -74,8 +80,14 @@
 	{
 		"title": "Freezie",
 		"americanized" : "Ice Pop",
-		"definition": "A nostalgic summertime treat consisting of ice, sugar, and food-coloring that comes in a clear plastic tube. Red is the best flavor. End of discussion",
+		"definition": "A nostalgic summertime treat consisting of ice, sugar, and food-coloring that comes in a clear plastic tube. Red is the best flavor. End of discussion.",
 		"tags": "['freezie', 'ice pop', 'icepop', 'food']"
+	},
+	{
+		"title": "Garburator",
+		"americanized": "Garbage Disposal",
+		"definition": "An electric device underneath of a kitchen sink that breaks up food so it can be washed away.",
+		"tags": "['garburator', 'garbarator', 'garbage disposal']"
 	},
 	{
 		"title": "GTs",
@@ -98,8 +110,8 @@
 	{
 		"title": "Harvey’s",
 		"americanized" : "",
-		"definition": "",
-		"tags": "['harvery's', 'harvery’s', 'harverys', 'food', 'fast food']"
+		"definition": "Harvey's is a fast food restaurant chain operating in Canada, with locations in every province except British Columbia.",
+		"tags": "['harvery's', 'harvery’s', 'harverys', 'food', 'fast food', 'harvs']"
 	},
 	{
 		"title": "Hydro",
@@ -116,7 +128,7 @@
 	{
 		"title": "Keener",
 		"americanized" : "Try-hard",
-		"definition": "Someone who’s over-eager; a suck-up; a try-hard; a brown-noser. You're such a keener for trying to learn Canadian slang and terminology",
+		"definition": "Someone who’s over-eager; a suck-up; a try-hard; a brown-noser. You’re such a keener for trying to learn Canadian slang and terminology",
 		"tags": "['keener', 'try hard', 'try-hard', 'eager']"
 	},
 	{
@@ -124,6 +136,18 @@
 		"americanized" : "Ketchip flavoured chips. Nothing quite like it in America, SORRY!",
 		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
 		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
+	},
+	{
+		"title": "Much Music",
+		"americanized": "MTV",
+		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
+		"tags": "['chips', 'ketchup', 'ketchip chips', 'ketchup chips', 'food']"
+	},
+	{
+		"title": "Poutine",
+		"americanized" : "",
+		"definition": "Ketchup flavored chips. A close second to another Canadian classic, all dressed chips.",
+		"tags": "['poutine', 'fries', 'food', 'disco fries']"
 	},
 	{
 		"title": "Zee",
