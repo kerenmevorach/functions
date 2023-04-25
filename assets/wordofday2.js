@@ -1,5 +1,6 @@
 //source: https://www.banjocode.com/post/javascript/iterate-array-with-modulo
-//using modulo to ensure we are getting data within the array
+//source: https://www.youtube.com/watch?v=r5Iy3v1co0A
+//source: https://www.kirupa.com/javascript/infinitely_cycle_through_array.htm
 
 let datafile = "assets/glossary.json";
 
@@ -15,72 +16,33 @@ $(function() {
         function wordOfTheDay() {
 
             //example from source
-            let arrayLength = data.length;
-            let currentIndex = 24;
-            let nextIndex = (currentIndex + 1) % arrayLength;
+            // let arrayLength = data.length;
+            // let currentIndex = 24;
+            // let nextIndex = (currentIndex + 1) % arrayLength;
 
             // console.log(today)
             // console.log(data.length);
             // console.log(nextIndex);
 
-
+            // let minute = new Date().getSeconds() - 1;
+            // let wordIndex = Math.abs(minute % data.length);
+     
             
-            // let today = new Date().getDate() - 1;
-            // let wordIndex = today % data.length;
+            //getting the day and subtracting one, since the array starts from 0
+            let today = new Date().getDate() - 1;
+            //using modulo operator - ensures we are staying within the array
+            //once the wordIndex is larger than the length of the data, the wordIndex will go back to 0
+            let wordIndex = today % data.length;
+            console.log(wordIndex)
 
-            let minute = new Date().getMinutes() - 1;
-            let wordIndex = minute % data.length;
 
             term.innerHTML = data[wordIndex].title;
             termDefinition.innerHTML = data[wordIndex].definition;
             americanVersion.innerHTML = data[wordIndex].americanized;
         }
 
-            // console.log(data[2].title)
-
-            //  let day = new Date().getDate() - 1; 
-
-            // for (let day = new Date().getDate() - 1; day < data.length; day++) {
-
-            //     if (day < data.length){
-            //         term.innerHTML = data[day].title;
-            //         termDefinition.innerHTML = data[day].definition;
-            //         americanVersion.innerHTML = data[day].americanized;
-            //     }
-
-            //     else if (day > data.length){
-            //         day = 0; continue;
-            //         term.innerHTML = data[day].title;
-            //         termDefinition.innerHTML = data[day].definition;
-            //         americanVersion.innerHTML = data[day].americanized;
-            //     }
-
-            // }
-                
-        // }
         setInterval(wordOfTheDay, 1000);
-        wordOfTheDay();
     
     });
 
 });
-
-
-            // console.log(data[2].title)
-
-            // let day = new Date().getDate() - 1; 
-
-            // if (day < data.length){
-            //     term.innerHTML = data[day].title;
-            //     termDefinition.innerHTML = data[day].definition;
-            //     americanVersion.innerHTML = data[day].americanized;
-            // }
-
-            // else if (day > data.length){
-            //     counter = 0
-            //     counter++
-            //     day = 0 + counter
-            //     term.innerHTML = data[day].title;
-            //     termDefinition.innerHTML = data[day].definition;
-            //     americanVersion.innerHTML = data[day].americanized;
-            // }   
