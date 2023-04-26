@@ -5,7 +5,7 @@
     --thirdhead: calc(var(--header) / 1.8);
     --body: calc(var(--header) / 2.4);
     --body-leading: calc(var(--header) / 1.85);
-    --button: 12px;
+    --button: 14px;
     --left-margin: 15px;
     --spacing: 135px;
     --text-color: red;
@@ -50,14 +50,15 @@ nav{
     font-family: 'Authentic Sans';
     font-weight: 200;
     font-size: var(--button);
-    border: 1px var(--text-color) solid;
-    background-color: var(--other-color);
+    /* border-bottom: 1px var(--text-color) solid; */
+    /* background-color: var(--other-color); */
     color: var(--text-color);
-    margin: 5px;
+    margin: 8px;
     padding: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 25px;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* border-radius: 25px; */
 }
 
 button:hover{
@@ -69,8 +70,9 @@ button:hover{
 }
 
 .selected{
-    background-color: var(--text-color);
-    color: var(--other-color);
+    /* background-color: var(--text-color); */
+    color: var(--text-color);
+    border-bottom: 1px var(--text-color) solid;
 }
 
 h1{
@@ -135,7 +137,7 @@ input{
     fill: none;
     stroke: red;
     stroke-miterlimit: 56;
-    stroke-width: 16px;
+    stroke-width: 12px;
 }
 
 .fill{
@@ -158,10 +160,6 @@ input{
         opacity: 0.7;
     }
 
-    :root{
-        --button: 16px;
-    }
-
     .big-title{
         font-size: 120px;
         line-height: 120px;
@@ -179,7 +177,7 @@ input{
         --left-margin: 30px;
         --body: calc(var(--header) / 3.6);
         --body-leading: calc(var(--header) / 2.6);
-        --button: 16px;
+        --button: 20px;
     }
 
     nav{
@@ -216,6 +214,7 @@ input{
         margin-left: 36px;
         max-width: 55ch;
     }
+
 }
 
 @media (min-width: 900px) {
