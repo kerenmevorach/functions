@@ -144,11 +144,6 @@ input{
     fill: white;
 }
 
-.big-title{
-    font-size: 100px;
-    line-height: 100px;
-    margin-top: 120px;
-}
 
 @media (min-width: 500px) {
 
@@ -158,12 +153,6 @@ input{
     
     .button:hover{
         opacity: 0.7;
-    }
-
-    .big-title{
-        font-size: 120px;
-        line-height: 120px;
-        margin-top: 120px;
     }
 
     .button{
@@ -203,26 +192,12 @@ input{
         margin-right: 10px;
     }
 
-    .big-title{
-        font-size: 190px;
-        line-height: 190px;
-        margin-top: 140px;
-    }
-
     .description{
         margin-top: 20px;
         margin-left: 36px;
         max-width: 55ch;
     }
 
-}
-
-@media (min-width: 900px) {
-    /* .big-title{
-        font-size: 260px;
-        line-height: 250px;
-        margin-top: 160px;
-    } */
 }
 
 @media (min-width: 1100px) {

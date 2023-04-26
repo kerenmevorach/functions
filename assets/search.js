@@ -86,7 +86,7 @@ $(function() {
         
                 // add message to tell people to SEARCH
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = '<p class="error">Hey there hozer, you’re going to have to search for something!</p>';
+                listItem.innerHTML = '<p class="error">You’re going to have to search for something!</p>';
                 selectedTermList.appendChild(listItem);  
             }
             
