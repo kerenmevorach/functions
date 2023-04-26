@@ -3,8 +3,8 @@
     --header-leading: calc(var(--header) + 8px);
     --subhead: calc(var(--header) / 1.4);
     --thirdhead: calc(var(--header) / 2.2);
-    --body: calc(var(--header) / 3);
-    --body-leading: calc(var(--header) / 2.4);
+    --body: calc(var(--header) / 2.2);
+    --body-leading: calc(var(--header) / 1.7);
     --button: 12px;
     --left-margin: 15px;
     --spacing: 135px;
