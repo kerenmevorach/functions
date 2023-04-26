@@ -108,10 +108,10 @@ $(function() {
                         //Create the item details
                         const itemDetails =
                             `
-                                <h2>${item.title}</h2>
-                                <h3 class="push">Definition:</h3>
+                                <h1>${item.title}</h1>
+                                <h2 class="push">Definition:</h2>
                                 <p class="definition">${item.definition}</p>
-                                <h3 class="push">Americanized:</h3>
+                                <h2 class="push">Americanized:</h2>
                                 <p>${item.americanized}</p>
                                 <div class="line"></div>
                             `;

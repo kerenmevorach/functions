@@ -1,10 +1,10 @@
 :root{
     --header: 40px;
     --header-leading: calc(var(--header) + 8px);
-    --subhead: calc(var(--header) / 1.4);
-    --thirdhead: calc(var(--header) / 2.2);
-    --body: calc(var(--header) / 2.2);
-    --body-leading: calc(var(--header) / 1.7);
+    --subhead: calc(var(--header) / 1.6);
+    --thirdhead: calc(var(--header) / 1.8);
+    --body: calc(var(--header) / 2.4);
+    --body-leading: calc(var(--header) / 1.85);
     --button: 12px;
     --left-margin: 15px;
     --spacing: 135px;
@@ -77,7 +77,7 @@ h1{
     font-size: var(--header);
     line-height: var(--header-leading);
     /* font-weight: bold; */
-    margin-left: var(--left-margin);
+    margin-left: calc(var(--left-margin) + 5px);
     margin-top: 114px;
     color: var(--text-color);
 }
@@ -85,8 +85,8 @@ h1{
 h2{
     font-size: var(--subhead);
     /* font-weight: bold; */
-    margin-left: var(--left-margin);
-    margin-top: 40px;
+    margin-left: calc(var(--left-margin) + 5px);
+    margin-top: 30px;
     color: var(--text-color);
 }
 
@@ -100,7 +100,7 @@ p{
     font-size: var(--body);
     font-weight: 100;
     line-height: var(--body-leading);
-    margin-left: var(--left-margin);
+    margin-left: calc(var(--left-margin) + 5px);
     margin-top: 6px;
     max-width: 46ch;
     margin-right: 20px;
@@ -188,7 +188,16 @@ input{
         left: calc(var(--left-margin) - 2px);
     }
 
+    h1{
+        margin-left: 40px;
+    }
+
+    h2{
+        margin-left: 40px;
+    }
+
     p{
+        margin-left: 40px;
         max-width: 42ch;
     }
 
