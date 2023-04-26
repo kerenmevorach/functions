@@ -28,6 +28,8 @@ function scrollToggle(x) {
     } else {
       console.log('remove')
       window.removeEventListener("scroll",scrollHeadline);
+      header.classList.remove('small-title')
+      header.classList.add('big-title')
     }
   }
 
