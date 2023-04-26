@@ -142,12 +142,15 @@ $(function() {
         let translateBox = document.querySelector('#term-to-translate')
         
         translateBox.oninput = () =>{
+            let termToTranslate = document.querySelector('#term-to-translate')
             //get the term as the user is typing
             getTerm();
             console.log('translate');
             translatedTermList.classList.add('active');
             translatedTermList.style.display = "block";
-            const wordSet = document.querySelectorAll('.word-set');    
+            const wordSet = document.querySelectorAll('.word-set');   
+            termToTranslate.style.color = "rgb(146, 146, 146)";
+ 
     
             //take item from dropdown to populate the textbox
             wordSet.forEach((menuitem) => {
@@ -157,6 +160,7 @@ $(function() {
                     translateBox.value = selectedItem;
                     translatedTermList.classList.remove('active');
                     translatedTermList.style.display = "none";
+                    termToTranslate.style.color = "black";
                 }
 
             })	

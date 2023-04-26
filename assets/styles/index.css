@@ -32,6 +32,15 @@ body{
     margin-left: 8px;
 }
 
+.extraspace{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 3px;
+}
+
+.extraspace:hover{
+    opacity: 0.7;
+}
 
 @media (min-width: 700px) {
     #wordofdaycontainer{

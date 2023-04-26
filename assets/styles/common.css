@@ -48,7 +48,7 @@ nav{
 
 .button{
     font-family: 'Authentic Sans';
-    font-weight: 200;
+    font-weight: 100;
     font-size: var(--button);
     /* border-bottom: 1px var(--text-color) solid; */
     /* background-color: var(--other-color); */

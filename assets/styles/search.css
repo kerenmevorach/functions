@@ -75,6 +75,10 @@ p{
     margin-top: -6px;
 }
 
+.error{
+    margin-top: 100px;
+}
+
 .translate-button:hover{
     background-color: rgb(255, 81, 81);
 }
@@ -177,7 +181,7 @@ p{
     }
 
     .translate-button{
-        left: -10px;
+        left: -6px;
         height: 60px;
         width: 121px;
         border-top-right-radius: 40px;
