@@ -22,8 +22,8 @@ $(function() {
             // console.log(nextIndex);
 
             //for testing
-            // let minute = new Date().getSeconds() - 1;
-            // let wordIndex = Math.abs(minute % data.length);
+            // let seconds = new Date().getSeconds() - 1;
+            // let wordIndex = Math.abs(seconds % data.length);
      
             
             //getting the day and subtracting one, since the array starts from 0
