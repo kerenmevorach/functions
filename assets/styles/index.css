@@ -54,14 +54,6 @@ body{
 
 }
 
-.small-title{
-    font-size: 80px;
-    line-height: 80px;
-    margin-top: 130px;
-    position: fixed;
-    /* transition: ease 1s; */
-}
-
 #caret{
     display: none;
     /* transition: ease 1s; */
@@ -108,16 +100,20 @@ body{
     }
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .big-title{
-        font-size: 38vh;
-        line-height: 38vh;
+        font-size: 280px;
+        line-height: 280px;
         margin-top: 140px;
         top: 0px;
         transition: ease 1s;
     }
 
     .small-title{
+        font-size: 155px;
+        line-height: 155px;
+        margin-top: 130px;
+        position: fixed;
         transition: ease 1s;
     }
     
@@ -128,7 +124,7 @@ body{
         fill: white;
         position: relative;
         left: calc(50% - 35px);
-        bottom: -700px;
+        bottom: -680px;
         justify-content: center;
         transition: ease 1s;
     }
@@ -138,7 +134,7 @@ body{
         margin-top: 750px;
         padding-bottom: 30px;
     }
-} */
+}
 
 @media (min-width: 1100px) {
     p{
