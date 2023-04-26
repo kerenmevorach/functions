@@ -86,7 +86,7 @@ $(function() {
         
                 // add message to tell people to SEARCH
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hey there hozer, you're going to have to search for something!</p>";
+                listItem.innerHTML = '<p class="error">Hey there hozer, you’re going to have to search for something!</p>';
                 selectedTermList.appendChild(listItem);  
             }
             
@@ -129,7 +129,7 @@ $(function() {
             //if the term isn't found 
             if (!termFound) {
                 const listItem = document.createElement('li') 
-                listItem.innerHTML = "<p>Hmmmm....we couldn't find that one! Are you sure that's a Canadian term, eh?</p>";
+                listItem.innerHTML = '<p class="error">Hmmmm....we couldn’t find that one! Are you sure that’s a Canadian term, eh?</p>';
                 selectedTermList.appendChild(listItem)
             }
             
