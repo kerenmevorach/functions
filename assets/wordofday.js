@@ -25,16 +25,17 @@ $(function() {
             // let seconds = new Date().getSeconds() - 1;
             // let wordIndex = Math.abs(seconds % data.length);
      
-            
             //getting the day and subtracting one, since the array starts from 0
+
             let today = new Date().getDate() - 1;
+
             //using modulo operator - ensures we are staying within the array
             //today is the dividend, data.length is the divisor
             //if you divide today by data.length, what is the remainder
             let wordIndex = today % data.length;
-            console.log(today)
-            console.log(data.length)
-            console.log(wordIndex)
+            // console.log(today)
+            // console.log(data.length)
+            // console.log(wordIndex)
 
 
             term.innerHTML = data[wordIndex].title;
@@ -42,7 +43,8 @@ $(function() {
             americanVersion.innerHTML = data[wordIndex].americanized;
         }
 
-        setInterval(wordOfTheDay, 500);
+        wordOfTheDay()
+        // setInterval(wordOfTheDay, 500);
     
     });
 
